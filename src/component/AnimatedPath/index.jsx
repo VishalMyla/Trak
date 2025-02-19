@@ -38,10 +38,10 @@ const AnimatedPath = ({ className, svgpath, pathId, arrowRef ,timeline }) => {
   }, [svgpath, pathId, arrowRef]);
 
   return (
-    <div className='border-2'>
+    <div className=''>
       <svg
-        width="100%"
-        height="auto"
+        width="95%"
+        height="140%"
         viewBox="0 0 1383 1044"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

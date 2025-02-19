@@ -65,7 +65,7 @@ function Works() {
     ]
 
     return (
-        <div className='my-40 flex flex-col items-center  justify-center mx-auto max-md:mx-1.5 max-md:block '>
+        <div className='my-40 flex flex-col items-center border-2 border-amber-600  justify-center mx-auto max-md:mx-1.5 max-md:block '>
             <img
                 ref={arrowRef}
                 id="arrow"
@@ -77,9 +77,9 @@ function Works() {
             <p className='text-base text-center mt-5'>Mobile banking differs from mobile payments,
                 which involves the use of a <br /> mobile device</p>
 
-            <section className=' my-20 w-[80%] max-md:w-[40%] max-md:flex max-md:flex-col'>
+            <section className=' my-20 w-[80%] max-md:w-full  '>
                 <div className='relative flex '>
-                    <div className=' flex flex-col items-start '>
+                    <div className=' flex flex-col items-start max-md:w-[50%]'>
                         <img src={Work1} alt="step1" className=' h-28' />
                         <h1 className='text-xl font-semibold mt-3.5'>Know yourself</h1>
                         <div className=' mt-3.5 w-[40%] max-md:w-full'>
@@ -96,25 +96,21 @@ function Works() {
 
 
                     </div>
-                    <AnimatedPath className="h-[37rem] left-12   max-md:left-0 max-md:hidden"
+                    <AnimatedPath className=" left-12   max-md:left-5 max-md:top-10"
                         svgpath="M2.4303 51.706C207.959 -39.7872 638.47 -67.0804 716.289 555.692C751.124 957.864 1069.11 1093.1 1380.3 1024.49"
                         pathId="dottedLine1"
                         arrowRef={arrowRef} 
                         timeline={timeline.current} />
 
-                         <AnimatedPath className="h-[37rem] left-12   max-md:left-0 lg:hidden"
-                        svgpath={getResponsivePath()}
-                        pathId="dottedLine1"
-                        arrowRef={arrowRef} 
-                        timeline={timeline.current} />
+                       
             
                 </div>
 
 
-                <div className=' flex flex-col items-end mt-40 max-md:mt-20'>
+                <div className=' flex flex-col items-end mt-40 max-md:mt-10 max-md:w-full border-2 '>
                     <img src={Work2} alt="step1" className=' h-28' />
                     <h1 className='text-xl font-semibold mt-3.5'>See your path</h1>
-                    <div className='w-[40%] max-md:w-full mt-3.5  ml-6'>
+                    <div className='w-[40%] max-md:w-[40%] mt-3.5  ml-6'>
                         <p className=' text-sm max-md:text-xs  '>
                             A roadmap designed just for you Once we know where you are and where you want to go, Trak creates a dynamic, personalized pathway. This isn’t a static plan – it evolves with you.
                         </p>
@@ -130,7 +126,7 @@ function Works() {
 
 
                 <div className='relative flex'>
-                    <div className=' flex flex-col items-start mt-40 max-md:mt-20 '>
+                    <div className=' flex flex-col items-start mt-40 max-md:mt-20  max-md:w-[40%]'>
                         <img src={Work3} alt="step1" className=' h-28' />
                         <h1 className='text-xl font-semibold mt-3.5'>See your path</h1>
                         <div className='w-[40%] mt-3.5 max-md:w-full '>
@@ -145,7 +141,7 @@ function Works() {
                         </div>
                     </div>
                     <AnimatedPath
-                        className="h-[37rem] left-1  max-md:h-[10rem] max-md:left-0"
+                        className="h-[37rem] left-1   max-md:left-0 max-md:-top-44"
                         svgpath="M1180.68 2.55774C1087.34 210.201 868.946 345.129 612.982 214.172C206.299 25.3335 36.6516 287.155 2.66342 441.671" // Bottom-to-top
                         pathId="dottedLine2"
                         arrowRef={arrowRef} 
@@ -155,10 +151,10 @@ function Works() {
 
 
                 <div className='flex relative'>
-                    <div className=' flex flex-col items-end mt-64 max-md:mt-20 '>
+                    <div className=' flex flex-col items-end mt-64 max-md:mt-10   '>
                         <img src={Work4} alt="step1" className=' h-28' />
                         <h1 className='text-xl font-semibold mt-3.5'>See your path</h1>
-                        <div className='w-[40%] mt-3.5 max-md:w-full '>
+                        <div className='w-[40%] mt-3.5 '>
                             <p className=' text-sm max-md:text-xs '>
 
                                 A roadmap designed just for you Once we know where you are and where you want to go, Trak creates a dynamic, personalized pathway. This isn’t a static plan – it evolves with you.
@@ -170,17 +166,19 @@ function Works() {
                             </ul>
                         </div>
                     </div>
-                    <AnimatedPath className="h-[37rem] left-14 -top-48 max-md:hidden"
+                    <AnimatedPath className="h-[37rem] left-14 -top-48 max-md:-top-80 "
                         svgpath="M2.4303 51.706C207.959 -39.7872 638.47 -67.0804 716.289 555.692C751.124 957.864 1069.11 1093.1 1380.3 1024.49"
                         pathId="dottedLine3"
                         arrowRef={arrowRef} 
                         timeline={timeline.current} />
                 </div>
-                <div className=' flex relative'>
-                    <div className=' flex flex-col items-start mt-40  max-md:mt-20'>
+
+
+                <div className=' flex relative max-md:w-full border-2 '>
+                    <div className=' flex flex-col items-start mt-40  max-md:mt-20  '>
                         <img src={Work5} alt="step1" className=' h-28' />
                         <h1 className='text-xl font-semibold mt-3.5'>See your path</h1>
-                        <div className='w-[40%] mt-3.5 max-md:w-full '>
+                        <div className='w-[40%] mt-3.5 '>
                             <p className=' text-sm max-md:text-xs '>
                                 A roadmap designed just for you Once we know where you are and where you want to go, Trak creates a dynamic, personalized pathway. This isn’t a static plan – it evolves with you.
                             </p>
@@ -192,7 +190,7 @@ function Works() {
                         </div>
                     </div>
                     <AnimatedPath
-                        className="h-[37rem] left-8 max-md:hidden"
+                        className="h-[37rem] left-8  max-md:-top-44 "
                         svgpath="M1180.68 2.55774C1087.34 210.201 868.946 345.129 612.982 214.172C206.299 25.3335 36.6516 287.155 2.66342 441.671" // Bottom-to-top
                         pathId="dottedLine4"
                         arrowRef={arrowRef} 

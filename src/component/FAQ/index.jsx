@@ -56,19 +56,19 @@ const FAQ = () => {
   };
 
   return (
-    <div className="faq-container my-40">
+    <div className=" my-40">
       <h1 className="text-4xl text-center font-semibold  fontClassFAQ mb-20">
         Frequently 
         Asked
         <b className="text-[#39DC8E] font-semibold"> Questions</b>
       </h1>
       {faqData.map((faq, index) => (
-        <div className="border-2 border-black mb-5 py-4 rounded-md px-5 mx-auto pt-5 mt-12 w-3xl max-md:w-fit " key={faq.id}>
+        <div className="border-2 border-black mb-5 py-4 rounded-md px-5 mx-auto pt-5 mt-12 w-3xl max-md:w-full " key={faq.id}>
           <div className="faq-header relative" onClick={() => toggleFAQ(index)}>
             <span className="text-lg max-md:text-sm font-semibold">0{index + 1}</span>
             <span className="ml-5 max-md:ml-2 text-xl max-md:text-sm font-semibold">{faq.question}</span>
             <span
-              className={`px-5 py-4 max-md:h-auto    ${activeIndex === index ? 'bg-[#39DC8E]':'bg-black text-white' }  text-2xl absolute -right-5 -top-5 cursor-pointer`}
+              className={`px-5 py-4 max-md:py-3.5    ${activeIndex === index ? 'bg-[#39DC8E]':'bg-black text-white' }  text-2xl absolute -right-5 -top-5 cursor-pointer`}
             >
               {activeIndex === index ? '-' : '+'}
             </span>
