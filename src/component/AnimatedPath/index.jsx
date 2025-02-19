@@ -1,40 +1,41 @@
-import React, { useEffect, useRef } from 'react';
-import arrow from '../../assets/arrow.svg';
+import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 
-const AnimatedPath = ({ className, svgpath, pathId, timeline }) => {
-  const arrowRef = useRef(null); // Ref for the arrow element
-
-  // Register the MotionPathPlugin
-  gsap.registerPlugin(MotionPathPlugin);
+const AnimatedPath = ({ className, svgpath, pathId, arrowRef ,timeline }) => {
+  // Register the plugins
+  gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
   useEffect(() => {
     // Ensure the arrow and path exist in the DOM
     if (arrowRef.current && document.querySelector(`#${pathId}`)) {
       // Show the arrow at the start of the animation
-      timeline.set(arrowRef.current, { opacity: 1 }, `+=0`);
-  
-      // Add the motion path animation
-      timeline.to(
-        arrowRef.current,
-        {
-          motionPath: {
-            path: `#${pathId}`, // Reference the path by its unique ID
-            align: `#${pathId}`, // Align the arrow to the path
-            autoRotate: true, // Rotate the arrow to follow the path's direction
-            alignOrigin: [0.5, 0.5], // Center the arrow on the path
-          },
-          duration: 5, // Animation duration
-          ease: 'power1.inOut', // Smooth easing
+      gsap.set(arrowRef.current, { opacity: 1 });
+
+      // Create the motion path animation
+      const animation = gsap.to(arrowRef.current, {
+        motionPath: {
+          path: `#${pathId}`, // Reference the path by its unique ID
+          align: `#${pathId}`, // Align the arrow to the path
+          autoRotate: true, // Rotate the arrow to follow the path's direction
+          alignOrigin: [0.5, 0.5], // Center the arrow on the path
         },
-        `+=0` // No delay
-      );
-  
-      // Hide the arrow at the end of the animation
-      timeline.set(arrowRef.current, { opacity: 0 }, `+=0`);
+        duration: 5, // Animation duration
+        ease: 'power1.inOut', // Smooth easing
+        paused: true, // Pause the animation initially
+      });
+
+      // Create a ScrollTrigger for the animation
+      ScrollTrigger.create({
+        trigger: `#${pathId}`, // Trigger when the path enters the viewport
+        start: 'top center', // Start the animation when the top of the path reaches the center of the viewport
+        end: 'bottom center', // End the animation when the bottom of the path reaches the center of the viewport
+        onEnter: () => animation.play(), // Play the animation when the user scrolls to the path
+        onLeaveBack: () => animation.pause(0), // Pause and reset the animation when scrolling back
+      });
     }
-  }, [svgpath, pathId, timeline]);
+  }, [svgpath, pathId, arrowRef]);
 
   return (
     <div className=''>
@@ -57,15 +58,6 @@ const AnimatedPath = ({ className, svgpath, pathId, timeline }) => {
           strokeDasharray="1.85 18.53"
         />
       </svg>
-
-      {/* Single arrow element with a ref */}
-      <img
-        ref={arrowRef}
-        id="arrow" // Single ID for the arrow
-        src={arrow}
-        alt="arrow"
-        className='absolute h-6 w-6 opacity-0' // Initially hidden
-      />
     </div>
   );
 };

@@ -7,10 +7,12 @@ import Work4 from '../../assets/work4.svg'
 import Work5 from '../../assets/work5.svg'
 import DotLine1 from '../../assets/line1.svg'
 import AnimatedPath from '../AnimatedPath'
+import arrow from '../../assets/arrow.svg'
+import Heading from '../Heading';
 function Works() {
 
     const timeline = useRef(gsap.timeline({ repeat: -1, repeatDelay: 1 }));
-
+    const arrowRef = useRef(null);
     const worksData = [
         {
             id: 1,
@@ -55,9 +57,17 @@ function Works() {
         }
 
     ]
+
     return (
-        <div className='my-28 flex flex-col items-center  justify-center mx-auto'>
-            <h1 className=' text-4xl text-center'>How its works</h1>
+        <div className='my-40 flex flex-col items-center  justify-center mx-auto'>
+            <img
+                ref={arrowRef}
+                id="arrow"
+                src={arrow}
+                alt="arrow"
+                className='absolute h-6 w-6 opacity-0' // Initially hidden
+            />
+            <Heading txt="How its works"/>
             <p className='text-base text-center mt-5'>Mobile banking differs from mobile payments,
                 which involves the use of a <br /> mobile device</p>
 
@@ -67,23 +77,23 @@ function Works() {
                         <img src={Work1} alt="step1" className=' h-28' />
                         <h1 className='text-xl font-semibold mt-3.5'>Know yourself</h1>
                         <div className=' mt-3.5 w-[40%] max-md:w-full'>
-                        <p className=' text-sm'>
-                            Every journey starts with understanding where you are.Trak begins by learning about you:
-                            your skills, experiences, career goals, and preferences. Through a quick assessment,
-                            we gather the insights needed to tailor a pathway just for you.  </p>
-                        <ul className=' list-disc text-sm '>
-                            <li className='ml-7 max-md:ml-3'>What you do:Complete a quick skills and career goal survey.
-                            </li>
-                            <li className='ml-7 max-md:ml-3'>What Trak does: Analyzes your inputs using AI to identify your skill gaps and opportunities.</li>
-                        </ul>
+                            <p className=' text-sm'>
+                                Every journey starts with understanding where you are.Trak begins by learning about you:
+                                your skills, experiences, career goals, and preferences. Through a quick assessment,
+                                we gather the insights needed to tailor a pathway just for you.  </p>
+                            <ul className=' list-disc text-sm '>
+                                <li className='ml-7 max-md:ml-3'>What you do:Complete a quick skills and career goal survey.
+                                </li>
+                                <li className='ml-7 max-md:ml-3'>What Trak does: Analyzes your inputs using AI to identify your skill gaps and opportunities.</li>
+                            </ul>
                         </div>
-                      
+
 
                     </div>
                     <AnimatedPath className="h-[37rem] left-12 max-md:hidden"
                         svgpath="M2.4303 51.706C207.959 -39.7872 638.47 -67.0804 716.289 555.692C751.124 957.864 1069.11 1093.1 1380.3 1024.49"
                         pathId="dottedLine1"
-
+                        arrowRef={arrowRef} 
                         timeline={timeline.current} />
                 </div>
 
@@ -92,17 +102,17 @@ function Works() {
                     <img src={Work2} alt="step1" className=' h-28' />
                     <h1 className='text-xl font-semibold mt-3.5'>See your path</h1>
                     <div className='w-[40%] max-md:w-full mt-3.5  ml-6'>
-                    <p className=' text-sm   '>
-                        A roadmap designed just for you Once we know where you are and where you want to go, Trak creates a dynamic, personalized pathway. This isn’t a static plan – it evolves with you.
-                    </p>
-                    <ul className=' list-disc text-sm   '>
-                        <li className='ml-7 max-md:ml-3'>What you do: Engage with your personalized pathway, exploring the skills and
-                        </li>
-                        <li className='ml-7 max-md:ml-3'>What Trak does: Analyzes your inpuSee your pathts using AI to identify your skill gaps and opportunities.</li>
-                    </ul>
+                        <p className=' text-sm   '>
+                            A roadmap designed just for you Once we know where you are and where you want to go, Trak creates a dynamic, personalized pathway. This isn’t a static plan – it evolves with you.
+                        </p>
+                        <ul className=' list-disc text-sm   '>
+                            <li className='ml-7 max-md:ml-3'>What you do: Engage with your personalized pathway, exploring the skills and
+                            </li>
+                            <li className='ml-7 max-md:ml-3'>What Trak does: Analyzes your inpuSee your pathts using AI to identify your skill gaps and opportunities.</li>
+                        </ul>
 
                     </div>
-                   
+
                 </div>
 
 
@@ -111,45 +121,46 @@ function Works() {
                         <img src={Work3} alt="step1" className=' h-28' />
                         <h1 className='text-xl font-semibold mt-3.5'>See your path</h1>
                         <div className='w-[40%] mt-3.5 max-md:w-full '>
-                        <p className=' text-sm '>
-                            A roadmap designed just for you Once we know where you are and where you want to go, Trak creates a dynamic, personalized pathway. This isn’t a static plan – it evolves with you.
-                        </p>
-                        <ul className=' list-disc text-sm   '>
-                            <li className='ml-7 max-md:ml-3'>What you do: Engage with your personalized pathway, exploring the skills and
-                            </li>
-                            <li className='ml-7 max-md:ml-3'>What Trak does: Analyzes your inpuSee your pathts using AI to identify your skill gaps and opportunities.</li>
-                        </ul>
+                            <p className=' text-sm '>
+                                A roadmap designed just for you Once we know where you are and where you want to go, Trak creates a dynamic, personalized pathway. This isn’t a static plan – it evolves with you.
+                            </p>
+                            <ul className=' list-disc text-sm   '>
+                                <li className='ml-7 max-md:ml-3'>What you do: Engage with your personalized pathway, exploring the skills and
+                                </li>
+                                <li className='ml-7 max-md:ml-3'>What Trak does: Analyzes your inpuSee your pathts using AI to identify your skill gaps and opportunities.</li>
+                            </ul>
                         </div>
                     </div>
                     <AnimatedPath
                         className="h-[37rem] left-1 max-md:hidden"
                         svgpath="M1180.68 2.55774C1087.34 210.201 868.946 345.129 612.982 214.172C206.299 25.3335 36.6516 287.155 2.66342 441.671" // Bottom-to-top
                         pathId="dottedLine2"
+                        arrowRef={arrowRef} 
                         timeline={timeline.current}
                     />
                 </div>
 
 
                 <div className='flex relative'>
-                    <div className=' flex flex-col items-end mt-40 max-md:mt-20 '>
+                    <div className=' flex flex-col items-end mt-64 max-md:mt-20 '>
                         <img src={Work4} alt="step1" className=' h-28' />
                         <h1 className='text-xl font-semibold mt-3.5'>See your path</h1>
                         <div className='w-[40%] mt-3.5 max-md:w-full '>
-                        <p className=' text-sm '>
+                            <p className=' text-sm '>
 
-                            A roadmap designed just for you Once we know where you are and where you want to go, Trak creates a dynamic, personalized pathway. This isn’t a static plan – it evolves with you.
-                        </p>
-                        <ul className=' list-disc text-sm  '>
-                            <li className='ml-7 max-md:ml-3'>What you do: Engage with your personalized pathway, exploring the skills and
-                            </li>
-                            <li className='ml-7 max-md:ml-3'>What Trak does: Analyzes your inpuSee your pathts using AI to identify your skill gaps and opportunities.</li>
-                        </ul>
+                                A roadmap designed just for you Once we know where you are and where you want to go, Trak creates a dynamic, personalized pathway. This isn’t a static plan – it evolves with you.
+                            </p>
+                            <ul className=' list-disc text-sm  '>
+                                <li className='ml-7 max-md:ml-3'>What you do: Engage with your personalized pathway, exploring the skills and
+                                </li>
+                                <li className='ml-7 max-md:ml-3'>What Trak does: Analyzes your inpuSee your pathts using AI to identify your skill gaps and opportunities.</li>
+                            </ul>
                         </div>
                     </div>
-                    <AnimatedPath className="h-[26rem] left-40 -top-28 max-md:hidden"
+                    <AnimatedPath className="h-[37rem] left-14 -top-48 max-md:hidden"
                         svgpath="M2.4303 51.706C207.959 -39.7872 638.47 -67.0804 716.289 555.692C751.124 957.864 1069.11 1093.1 1380.3 1024.49"
                         pathId="dottedLine3"
-
+                        arrowRef={arrowRef} 
                         timeline={timeline.current} />
                 </div>
                 <div className=' flex relative'>
@@ -157,28 +168,29 @@ function Works() {
                         <img src={Work5} alt="step1" className=' h-28' />
                         <h1 className='text-xl font-semibold mt-3.5'>See your path</h1>
                         <div className='w-[40%] mt-3.5 max-md:w-full '>
-                        <p className=' text-sm '>
-                            A roadmap designed just for you Once we know where you are and where you want to go, Trak creates a dynamic, personalized pathway. This isn’t a static plan – it evolves with you.
-                        </p>
-                        <ul className=' list-disc text-sm    '>
-                            <li className='ml-7 max-md:ml-3'>What you do: Engage with your personalized pathway, exploring the skills and
-                            </li>
-                            <li className='ml-7 max-md:ml-3'>What Trak does: Analyzes your inpuSee your pathts using AI to identify your skill gaps and opportunities.</li>
-                        </ul>
+                            <p className=' text-sm '>
+                                A roadmap designed just for you Once we know where you are and where you want to go, Trak creates a dynamic, personalized pathway. This isn’t a static plan – it evolves with you.
+                            </p>
+                            <ul className=' list-disc text-sm    '>
+                                <li className='ml-7 max-md:ml-3'>What you do: Engage with your personalized pathway, exploring the skills and
+                                </li>
+                                <li className='ml-7 max-md:ml-3'>What Trak does: Analyzes your inpuSee your pathts using AI to identify your skill gaps and opportunities.</li>
+                            </ul>
                         </div>
                     </div>
                     <AnimatedPath
                         className="h-[37rem] left-8 max-md:hidden"
                         svgpath="M1180.68 2.55774C1087.34 210.201 868.946 345.129 612.982 214.172C206.299 25.3335 36.6516 287.155 2.66342 441.671" // Bottom-to-top
                         pathId="dottedLine4"
+                        arrowRef={arrowRef} 
                         timeline={timeline.current}
                     />
                 </div>
             </section>
             <button className='bg-white border-2 border-black py-1 px-7 mt-10 rounded-sm btnShadow'>
                 Start My Personalized Path Today</button>
-      </div>
-  )
+        </div>
+    )
 }
 
 export default Works

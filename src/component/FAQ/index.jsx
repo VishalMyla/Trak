@@ -20,13 +20,32 @@ const FAQ = () => {
     {
         id: 4,
         question: 'Can I change my goals after starting?',
-        answer:''
+        answer:'Absolutely! Trak’s pathways are dynamic and evolve as your goals or circumstances change. You’re in control every step of the way.'
     },
     {
          id:5,
          question: 'Is Trak suitable for beginners?',
-         answer: 'To get started with Trak, simply sign up for a free account, complet'
-    }
+         answer: 'Trak offers a mix of videos, articles, hands-on projects, and more, all tailored to your learning preferences and pace.'
+    },{
+      id:6,
+      question: 'Is Trak suitable for beginners?',
+      answer: 'Yes! Whether you’re just starting or upskilling, Trak’s personalized pathways meet you at your current level and guide you toward your goals.'
+    },
+    {
+      id:7,
+      question: 'How do I track my progress?',
+      answer: 'Your progress is displayed on a dashboard, showing completed modules, milestones achieved, and what’s next on your pathway.'
+    },
+    {
+      id:8,
+      question: 'Is there a cost to use Trak?',
+      answer: 'Trak offers both free and premium plans. While the free plan provides essential features, the premium plan unlocks advanced tools, exclusive milestones, and tailored resources.'
+    },
+    {
+      id:9,
+      question: 'How do I get started?',
+      answer: `Getting started is easy: \nSign up on our platform. \nComplete a quick assessment. \nReceive your personalized pathway and start learning!`
+    },
   ];
 
   const [activeIndex, setActiveIndex] = useState(null);
@@ -37,24 +56,24 @@ const FAQ = () => {
   };
 
   return (
-    <div className="faq-container">
-      <h1 className="text-5xl fontClassFAQ">
-        Frequently <br />
+    <div className="faq-container my-40">
+      <h1 className="text-4xl text-center font-semibold  fontClassFAQ mb-20">
+        Frequently 
         Asked
         <b className="text-[#39DC8E] font-semibold"> Questions</b>
       </h1>
       {faqData.map((faq, index) => (
-        <div className="border-2 border-black mb-5 py-4 rounded-md px-5 pt-5 mt-12 w-3xl " key={faq.id}>
+        <div className="border-2 border-black mb-5 py-4 rounded-md px-5 mx-auto pt-5 mt-12 w-3xl max-md:w-fit " key={faq.id}>
           <div className="faq-header relative" onClick={() => toggleFAQ(index)}>
-            <span className="text-lg font-semibold">0{index + 1}</span>
-            <span className="ml-5 text-xl font-semibold">{faq.question}</span>
+            <span className="text-lg max-md:text-sm font-semibold">0{index + 1}</span>
+            <span className="ml-5 max-md:ml-2 text-xl max-md:text-sm font-semibold">{faq.question}</span>
             <span
-              className={`px-5 py-4  ${activeIndex === index ? 'bg-[#39DC8E]':'bg-black text-white' }  text-2xl absolute -right-5 -top-5 cursor-pointer`}
+              className={`px-5 py-4 max-md:h-auto    ${activeIndex === index ? 'bg-[#39DC8E]':'bg-black text-white' }  text-2xl absolute -right-5 -top-5 cursor-pointer`}
             >
               {activeIndex === index ? '-' : '+'}
             </span>
           </div>
-          <div className={`faq-content ${activeIndex === index ? 'block' : 'hidden'}`}>
+          <div className={` faq-content ${activeIndex === index ? 'block' : 'hidden'}`}>
             <p className="my-10 mb-16 ml-10 font-light leading-loose">{faq.answer}</p>
           </div>
         </div>

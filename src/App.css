@@ -78,35 +78,30 @@ path {
   animation: slideIn 0.8s forwards;
 }
 
-@keyframes moveRight {
-  from { transform: translateX(0); }
-  to { transform: translateX(100%); }
-}
+
 
 @keyframes moveLeft {
   from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
+  to { transform: translateX(20%); }
 }
 
-.enable-animation-left {
-  animation: scroll 10s ease-in-out infinite;
-}
+
 
 @keyframes moveRight {
   from {
-    transform: translateX(-100%);
+    transform: translateX(0%);
   }
   to {
-    transform: translateX(0);
+    transform: translateX(-20%);
   }
 }
 
 .enable-animation-right {
-  animation: moveRight 10s infinite alternate;
+  animation: moveRight 15s infinite alternate;
 }
 
 .enable-animation-left {
-  animation: moveLeft 10s infinite alternate;
+  animation: moveLeft 15s infinite alternate;
 }
 
 .boxShadow {

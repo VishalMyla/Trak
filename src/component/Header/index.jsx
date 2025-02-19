@@ -8,13 +8,13 @@ function Header() {
       <div className=' flex px-24 max-md:px-8 py-5 justify-between items-center '>
         <div className='flex justify-center items-center  '>
           {Isclicked ? (
-            <h1 className='font-semibold text-2xl cursor-pointer'
+            <h1 className='font-semibold text-lg cursor-pointer'
               onClick={() => setIsclicked(!Isclicked)}>
               X
             </h1>
 
           ) : (
-            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 448 512" onClick={() => setIsclicked(!Isclicked)}
+            <svg xmlns="http://www.w3.org/2000/svg" height="15" width="12.5" viewBox="0 0 448 512" onClick={() => setIsclicked(!Isclicked)}
               className=' -ml-3.5  cursor-pointer'>
               <path fill="#000000" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0
            96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 
@@ -24,7 +24,7 @@ function Header() {
           <img src={Logo} alt="logo" className=' h-6 ml-6' />
         </div>
 
-        <button className='bg-white border-2 border-black py-1 px-7 rounded-sm btnShadow'> Try Us</button>
+        <button className='bg-white border-[1px] border-black py-2 px-7  rounded-sm btnShadow'> Try Us</button>
 
       </div>
       {Isclicked &&
