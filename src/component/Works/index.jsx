@@ -9,6 +9,7 @@ import DotLine1 from '../../assets/line1.svg'
 import AnimatedPath from '../AnimatedPath'
 import arrow from '../../assets/arrow.svg'
 import Heading from '../Heading';
+import Button from '../Button';
 function Works() {
 
     const timeline = useRef(gsap.timeline({ repeat: -1, repeatDelay: 1 }));
@@ -187,8 +188,7 @@ function Works() {
                     />
                 </div>
             </section>
-            <button className='bg-white border-2 border-black py-1 px-7 mt-10 rounded-sm btnShadow'>
-                Start My Personalized Path Today</button>
+           <Button txt = " Start My Personalized Path Today"/>
         </div>
     )
 }

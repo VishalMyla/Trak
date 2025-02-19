@@ -24,7 +24,7 @@ function Header() {
           <img src={Logo} alt="logo" className=' h-6 ml-6' />
         </div>
 
-        <button className='bg-white border-[1px] border-black py-2 px-7  rounded-sm btnShadow'> Try Us</button>
+        <button className='bg-white border-[1px] border-black py-2.5 text-sm px-7  rounded-sm btnShadow'> Try Us</button>
 
       </div>
       {Isclicked &&
