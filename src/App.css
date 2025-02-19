@@ -208,3 +208,12 @@ path {
     transform: translateY(-10px);
   }
 }
+
+@media (max-width: 768px) {
+  svg {
+    width: 90%;
+  }
+  path {
+    stroke-width: 0.3%; 
+  }
+}

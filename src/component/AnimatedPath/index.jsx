@@ -21,7 +21,7 @@ const AnimatedPath = ({ className, svgpath, pathId, arrowRef ,timeline }) => {
           autoRotate: true, // Rotate the arrow to follow the path's direction
           alignOrigin: [0.5, 0.5], // Center the arrow on the path
         },
-        duration: 5, // Animation duration
+        duration: window.innerWidth < 768 ? 3 : 5,  // Animation duration
         ease: 'power1.inOut', // Smooth easing
         paused: true, // Pause the animation initially
       });
@@ -40,8 +40,8 @@ const AnimatedPath = ({ className, svgpath, pathId, arrowRef ,timeline }) => {
   return (
     <div className=''>
       <svg
-        width="95%"
-        height="140%"
+        width="100%"
+        height="auto"
         viewBox="0 0 1383 1044"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -52,10 +52,10 @@ const AnimatedPath = ({ className, svgpath, pathId, arrowRef ,timeline }) => {
           id={pathId} // Unique ID for the path
           d={svgpath}
           stroke="#A5A5A5"
-          strokeWidth="3.70616"
+          strokeWidth="0.2%" // Use percentage for stroke width
           strokeLinecap="round"
           strokeLinejoin="round"
-          strokeDasharray="1.85 18.53"
+          strokeDasharray="0.1% 1%" // Use percentage for dash array
         />
       </svg>
     </div>

@@ -21,7 +21,7 @@ const Home = () => {
   }, []);
   return (
     <>
-      <div className='px-20 max-md:px-5 border-2 border-b-amber-600'>
+      <div className='px-20 max-md:px-5'>
         {showOverlay &&
           <div class="fc-loader fc-loader_overlay">
             <div class="fc-loader_overlay-fill"></div>

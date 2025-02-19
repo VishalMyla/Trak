@@ -65,7 +65,7 @@ function Works() {
     ]
 
     return (
-        <div className='my-40 flex flex-col items-center border-2 border-amber-600  justify-center mx-auto max-md:mx-1.5 max-md:block '>
+        <div className='my-40 flex flex-col items-center   justify-center mx-auto max-md:mx-1.5 max-md:block  '>
             <img
                 ref={arrowRef}
                 id="arrow"
@@ -96,7 +96,7 @@ function Works() {
 
 
                     </div>
-                    <AnimatedPath className=" left-12   max-md:left-5 max-md:top-10"
+                    <AnimatedPath className="h-[37rem] left-12   max-md:left-5 max-md:top-10"
                         svgpath="M2.4303 51.706C207.959 -39.7872 638.47 -67.0804 716.289 555.692C751.124 957.864 1069.11 1093.1 1380.3 1024.49"
                         pathId="dottedLine1"
                         arrowRef={arrowRef} 
@@ -107,7 +107,7 @@ function Works() {
                 </div>
 
 
-                <div className=' flex flex-col items-end mt-40 max-md:mt-10 max-md:w-full border-2 '>
+                <div className=' flex flex-col items-end mt-40 max-md:mt-10 max-md:w-full  '>
                     <img src={Work2} alt="step1" className=' h-28' />
                     <h1 className='text-xl font-semibold mt-3.5'>See your path</h1>
                     <div className='w-[40%] max-md:w-[40%] mt-3.5  ml-6'>
@@ -174,7 +174,7 @@ function Works() {
                 </div>
 
 
-                <div className=' flex relative max-md:w-full border-2 '>
+                <div className=' flex relative max-md:w-full '>
                     <div className=' flex flex-col items-start mt-40  max-md:mt-20  '>
                         <img src={Work5} alt="step1" className=' h-28' />
                         <h1 className='text-xl font-semibold mt-3.5'>See your path</h1>
