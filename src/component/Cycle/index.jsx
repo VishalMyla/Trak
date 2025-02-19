@@ -6,7 +6,7 @@ const Cycle = () => {
 
 
   return (
-    <div className=' w-[40%] py-32  ' >
+    <div className=' w-[40%] py-32  -mt-40 ' >
       <div className='flex justify-around'>
         <div className='flex relative w-fit'>
           <div className=' shadow-2xl rounded-4xl  w-fit boxShadow p-1.5 px-5'>

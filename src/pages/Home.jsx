@@ -48,8 +48,8 @@ const Home = () => {
             <Button txt="Explore My Career Path with Trak" />
 
           </div>
-          {/* 
-        <Cycle /> */}
+          
+        <Cycle />
 
 
 
