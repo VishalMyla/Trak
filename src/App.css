@@ -82,7 +82,7 @@ path {
 
 @keyframes moveLeft {
   from { transform: translateX(0); }
-  to { transform: translateX(20%); }
+  to { transform: translateX(10%); }
 }
 
 
@@ -92,7 +92,7 @@ path {
     transform: translateX(0%);
   }
   to {
-    transform: translateX(-20%);
+    transform: translateX(-10%);
   }
 }
 

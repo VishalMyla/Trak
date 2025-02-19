@@ -28,16 +28,28 @@ const Home = () => {
             <SmokeEmulsion />
           </div>
         }
-        <h1 className='w-[70%] max-md:w-full fontClass font-medium text-7xl my-10'>
+        <h1 className='w-[70%] max-md:w-full fontClass font-medium text-7xl max-md:text-4xl my-10 lg:block max-md:hidden'>
           Your dream career isn’t a faraway <br />
           destination – it’s a journey.<br />
           Trak makes sure you’re on the
-          <span className='flex'>
+          <span className='flex max-md:flex-col'>
           <span className='text-[#39DC8E] fontClassFastHand font-medium flex flex-col items-start'>
             right path
-            <img src={sign} className='h-10 inline' /></span> 
-            <span className='inline'>,every step of the way.</span>
+            <img src={sign} className='h-10 max-md:h-5 inline' /></span> 
+            <span className='inline '>,every step of the way.</span>
           </span>
+     
+       </h1>
+
+       <h1 className='  fontClass font-medium  my-10 lg:hidden max-md:block max-md:text-4xl'>
+       Your dream career isn’t a faraway destination – it’s a journey. Trak makes sure you’re on the                        , every step of the way.
+      
+          <span className='text-[#39DC8E] fontClassFastHand font-medium flex flex-col items-start'>
+            right path
+            <img src={sign} className='h-10 max-md:h-5 inline ' /></span> 
+           ,every step of the way.
+         
+
        </h1>
 
         <div className='flex w-full justify-between'>
@@ -48,8 +60,8 @@ const Home = () => {
             <Button txt="Explore My Career Path with Trak" />
 
           </div>
-          
-        <Cycle />
+{/*           
+        <Cycle /> */}
 
 
 
