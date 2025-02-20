@@ -1,22 +1,17 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 
 const AnimatedPath = ({ className, svgpath, pathId, arrowRef }) => {
-  const pathRef = useRef(null); // Ref for the SVG path
-
   // Register the plugins
   gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
   useEffect(() => {
     // Ensure the arrow and path exist in the DOM
-    if (arrowRef.current && pathRef.current) {
+    if (arrowRef.current && document.querySelector(`#${pathId}`)) {
       // Show the arrow at the start of the animation
       gsap.set(arrowRef.current, { opacity: 1 });
-
-      // Calculate the total length of the path
-      const pathLength = pathRef.current.getTotalLength();
 
       // Create the motion path animation
       const animation = gsap.to(arrowRef.current, {
@@ -27,17 +22,16 @@ const AnimatedPath = ({ className, svgpath, pathId, arrowRef }) => {
           alignOrigin: [0.5, 0.5], // Center the arrow on the path
         },
         ease: 'none', // Linear easing for smooth scrolling
-        duration: pathLength / 100, // Scale duration based on path length
       });
 
       // Create a ScrollTrigger for the animation
       ScrollTrigger.create({
         trigger: `#${pathId}`, // Trigger when the path enters the viewport
-        start: 'top 80%', // Start the animation when the top of the path reaches 80% of the viewport
-        end: 'bottom 20%', // End the animation when the bottom of the path reaches 20% of the viewport
+        start: 'top center', // Start the animation when the top of the path reaches the center of the viewport
+        end: 'bottom center', // End the animation when the bottom of the path reaches the center of the viewport
         animation: animation, // Link the animation to the ScrollTrigger
-        scrub: 1, // Smooth scrubbing with a 1-second delay
-        markers: true, // Set to true for debugging (shows start/end markers)
+        scrub: 5, // Smooth scrubbing with a 1-second delay
+        markers: false, // Set to true for debugging (shows start/end markers)
       });
     }
   }, [svgpath, pathId, arrowRef]);
@@ -55,7 +49,6 @@ const AnimatedPath = ({ className, svgpath, pathId, arrowRef }) => {
         {/* Dynamically set the path using the `svgpath` prop */}
         <path
           id={pathId} // Unique ID for the path
-          ref={pathRef} // Ref to the path element
           d={svgpath}
           stroke="#A5A5A5"
           strokeWidth="0.2%" // Use percentage for stroke width
