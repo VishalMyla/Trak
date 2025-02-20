@@ -78,7 +78,7 @@ function Works() {
                 which involves the use of a <br /> mobile device</p>
 
             <section className=' my-20 w-[80%] max-md:w-full  '>
-                <div className='relative flex '>
+                <div className='relative flex max-md:h-full '>
                     <div className=' flex flex-col items-start max-md:w-[50%]'>
                         <img src={Work1} alt="step1" className=' h-28' />
                         <h1 className='text-xl font-semibold mt-3.5'>Know yourself</h1>
@@ -96,7 +96,7 @@ function Works() {
 
 
                     </div>
-                    <AnimatedPath className="h-[37rem] left-12   max-md:left-5 max-md:top-10"
+                    <AnimatedPath className="h-[37rem] left-12   max-md:left-5 max-md:-top-24 max-md:h-[50rem]"
                         svgpath="M2.4303 51.706C207.959 -39.7872 638.47 -67.0804 716.289 555.692C751.124 957.864 1069.11 1093.1 1380.3 1024.49"
                         pathId="dottedLine1"
                         arrowRef={arrowRef} 
@@ -128,15 +128,17 @@ function Works() {
                 <div className='relative flex'>
                     <div className=' flex flex-col items-start mt-40 max-md:mt-20  max-md:w-[40%]'>
                         <img src={Work3} alt="step1" className=' h-28' />
-                        <h1 className='text-xl font-semibold mt-3.5'>See your path</h1>
+                        <h1 className='text-xl font-semibold mt-3.5'>Start Learning, Your Way </h1>
                         <div className='w-[40%] mt-3.5 max-md:w-full '>
                             <p className=' text-sm max-md:text-xs '>
-                                A roadmap designed just for you Once we know where you are and where you want to go, Trak creates a dynamic, personalized pathway. This isn’t a static plan – it evolves with you.
+                            Because one size never fits all."
+                            Dive into the content Trak provides, tailored to your preferences. Whether it’s video tutorials, articles, or hands-on projects
                             </p>
                             <ul className=' list-disc text-sm max-md:text-xs  '>
-                                <li className='ml-7 max-md:ml-3'>What you do: Engage with your personalized pathway, exploring the skills and
+                                <li className='ml-7 max-md:ml-3'>What you’ll find: Learning content dynamically personalized based on your style and pace.
                                 </li>
-                                <li className='ml-7 max-md:ml-3'>What Trak does: Analyzes your inpuSee your pathts using AI to identify your skill gaps and opportunities.</li>
+                                <li className='ml-7 max-md:ml-3'>What keeps you going: Regular updates and progress tracking keep you motivated.
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -166,7 +168,7 @@ function Works() {
                             </ul>
                         </div>
                     </div>
-                    <AnimatedPath className="h-[37rem] left-14 -top-48 max-md:-top-80 "
+                    <AnimatedPath className="h-[37rem] left-14 -top-48 max-md:-top-96 "
                         svgpath="M2.4303 51.706C207.959 -39.7872 638.47 -67.0804 716.289 555.692C751.124 957.864 1069.11 1093.1 1380.3 1024.49"
                         pathId="dottedLine3"
                         arrowRef={arrowRef} 

@@ -211,9 +211,14 @@ path {
 
 @media (max-width: 768px) {
   svg {
-    width: 90%;
+    width: 103%;
   }
   path {
     stroke-width: 0.3%; 
   }
+  .animated-path {
+    height: 50rem; /* Adjust this value as needed */
+  }
 }
+
+
