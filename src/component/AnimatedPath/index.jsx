@@ -26,7 +26,7 @@ const AnimatedPath = ({ className, svgpath, pathId, arrowRef }) => {
           autoRotate: true, // Rotate the arrow to follow the path's direction
           alignOrigin: [0.5, 0.5], // Center the arrow on the path
         },
-        ease:  'power1.inOut', // Smooth easing, // Linear easing for smooth scrolling
+        ease: 'none', // Linear easing for smooth scrolling
         duration: pathLength / 100, // Scale duration based on path length
       });
 

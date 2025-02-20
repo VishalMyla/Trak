@@ -26,25 +26,6 @@ const FAQ = () => {
          id:5,
          question: 'Is Trak suitable for beginners?',
          answer: 'Trak offers a mix of videos, articles, hands-on projects, and more, all tailored to your learning preferences and pace.'
-    },{
-      id:6,
-      question: 'Is Trak suitable for beginners?',
-      answer: 'Yes! Whether you’re just starting or upskilling, Trak’s personalized pathways meet you at your current level and guide you toward your goals.'
-    },
-    {
-      id:7,
-      question: 'How do I track my progress?',
-      answer: 'Your progress is displayed on a dashboard, showing completed modules, milestones achieved, and what’s next on your pathway.'
-    },
-    {
-      id:8,
-      question: 'Is there a cost to use Trak?',
-      answer: 'Trak offers both free and premium plans. While the free plan provides essential features, the premium plan unlocks advanced tools, exclusive milestones, and tailored resources.'
-    },
-    {
-      id:9,
-      question: 'How do I get started?',
-      answer: `Getting started is easy: \nSign up on our platform. \nComplete a quick assessment. \nReceive your personalized pathway and start learning!`
     },
   ];
 

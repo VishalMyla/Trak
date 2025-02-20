@@ -22,12 +22,7 @@ const Home = () => {
   return (
     <>
       <div className='px-20 max-md:px-5'>
-        {showOverlay &&
-          <div class="fc-loader fc-loader_overlay">
-            <div class="fc-loader_overlay-fill"></div>
-            <SmokeEmulsion />
-          </div>
-        }
+       
         <h1 className='w-[70%] max-md:w-full fontClass font-medium text-7xl max-md:text-4xl my-10 lg:block max-md:hidden'>
           Your dream career isn’t a faraway <br />
           destination – it’s a journey.<br />
@@ -68,19 +63,19 @@ const Home = () => {
 
         </div>
 
-        <section className='my-40 overflow-hidden'>
+        <section className='my-20 overflow-hidden'>
           <Soon />
         </section>
 
-        <section className='my-40'>
+        <section className='my-20'>
           <Works />
         </section>
 
-        <section className='my-80'>
+        <section className='my-20'>
           <FAQ />
         </section>
 
-        <section className='my-40'>
+        <section className='my-20'>
           <About />
         </section>
 
