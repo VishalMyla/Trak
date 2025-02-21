@@ -19,7 +19,7 @@ function Footer() {
                 <p className='mr-3.5 cursor-pointer hover:text-green-600 '>Ger</p>
                 <p className='mr-3.5 cursor-pointer hover:text-green-600'>Swe</p>
                 <p className='mr-3.5 cursor-pointer hover:text-green-600'>Eng</p>
-                <p className='mr-3.5 cursor-pointer hover:text-green-600'>Rus</p>
+    
 
              </div>
         </div>

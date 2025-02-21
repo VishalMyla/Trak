@@ -4,6 +4,7 @@ body {
 
 .btnShadow {
   box-shadow: 5px 4px 0px;
+  border-radius: 12px;
  
 }
 .btnShadow:hover{
