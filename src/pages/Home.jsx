@@ -7,22 +7,31 @@ import Works from '../component/Works'
 import Footer from '../component/Footer'
 import Soon from '../component/ComingSoon'
 import SmokeEmulsion from '../component/Waves'
+import { motion } from "motion/react"
 import Button from '../component/Button'
 import sign from '../assets/scribble.svg'
+import waves from '../assets/waves.svg'
+import { svg } from 'motion/react-client'
 const Home = () => {
   const [showOverlay, setShowOverlay] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowOverlay(false);
-    }, 1000);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, []);
   return (
     <>
       <div className='px-20 max-md:px-5'>
-       
+      {
+  showOverlay ? (
+    <div >
+      <SmokeEmulsion />
+    </div>
+  ) : null
+}
         <h1 className='w-[70%] max-md:w-full fontClass font-medium text-7xl max-md:text-4xl my-10 lg:block max-md:hidden'>
           Your dream career isn’t a faraway <br />
           destination – it’s a journey.<br />
