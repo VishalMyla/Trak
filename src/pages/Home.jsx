@@ -65,7 +65,7 @@ const Home = () => {
 
           </div>
           
-        <Cycle />
+        {/* <Cycle /> */}
 
 
 

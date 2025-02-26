@@ -5,7 +5,7 @@ function Footer() {
     <div className = 'bg-black py-16 px-14 w-full max-md:px-5 max-md:py-5'>
         <h1 className=' w-[60%] max-md:w-fit max-md:text-xl text-center mx-auto text-white text-6xl font-semibold'>
         Your dream career isn’t a faraway  
-        <span className='bg-white inline-block text-black rounded-md px-2 py-1.5 text-3xl mx-2.5 -rotate-6'
+        <span className='bg-white inline-block text-black rounded-md px-2 py-1.5 max-md:px-1 text-3xl mx-2.5 -rotate-6'
         >destination</span>
          it’s a journey. Trak makes sure you’re on the right path, every 
          <span className='bg-white inline-block text-black rounded-md px-2 py-1 text-3xl mx-2.5 rotate-6'
