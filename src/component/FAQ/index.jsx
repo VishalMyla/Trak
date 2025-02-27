@@ -9,13 +9,13 @@ const FAQ = () => {
     },
     {
       id: 2,
-      question: 'How does Trak create my learning pathway?',
-      answer: 'Trak uses AI to analyze your current skills, career aspirations, and preferences. Based on this, it generates a customized roadmap with learning modules, timelines, and milestones designed for your success.',
+      question: ' How do I track my progress?',
+      answer: 'Your progress is displayed on a dashboard, showing completed modules, milestones achieved, and what’s next on your pathway.',
     },
     {
       id: 3,
-      question: 'What are the milestones on my pathway?',
-      answer: 'Milestones are key points in your learning journey that mark significant achievements or skill acquisitions. They help you track your progress and stay motivated.',
+      question: 'Is there a cost to use Trak?',
+      answer: 'Trak offers both free and premium plans. While the free plan provides essential features, the premium plan unlocks advanced tools, exclusive milestones, and tailored resources.',
     },
     {
         id: 4,
@@ -44,12 +44,12 @@ const FAQ = () => {
         <b className="text-[#39DC8E] font-semibold"> Questions</b>
       </h1>
       {faqData.map((faq, index) => (
-        <div className="border-2 border-black mb-5 py-4 rounded-md px-5 mx-auto pt-5 mt-12 w-3xl max-md:w-full " key={faq.id}>
+        <div className="border-2 border-black mb-5 py-4 rounded-md px-5 max-md:px-2 mx-auto pt-5 mt-12 w-3xl max-md:w-full " key={faq.id}>
           <div className="faq-header relative" onClick={() => toggleFAQ(index)}>
             <span className="text-lg max-md:text-sm font-semibold">0{index + 1}</span>
             <span className="ml-5 max-md:ml-2 text-xl max-md:text-sm font-semibold">{faq.question}</span>
             <span
-              className={`px-5 py-4 max-md:py-3.5    ${activeIndex === index ? 'bg-[#39DC8E]':'bg-black text-white' }  text-2xl absolute -right-5 -top-5 cursor-pointer`}
+              className={`w-[5%] h-[230%] max-md:h-[247%]  max-md:w-[10%] inline-block p-3 ${activeIndex === index ? 'bg-[#39DC8E]':'bg-black text-white' }  text-2xl absolute -right-5 -top-5 max-md:-right-2 cursor-pointer`}
             >
               {activeIndex === index ? '-' : '+'}
             </span>

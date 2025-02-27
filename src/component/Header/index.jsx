@@ -40,18 +40,18 @@ export default Header
 function HamBurger(params) {
   return (
     <div className=' backdrop-blur-lg py-20 w-full px-24  mt-8 absolute hamburger-slide-in  z-20 h-screen '>
-      <a href="" className='text-4xl font-semibold inline-block mt-0'>About</a> <br />
-      <a href="" className='text-4xl font-semibold inline-block mt-10'>Support</a> <br />
-      <a href="" className='text-4xl font-semibold inline-block mt-10'>FAQs</a> <br />
-      <a href="" className='text-4xl font-semibold inline-block mt-10'>Trak for Schools</a> <br />
+      <a href="#About" className='text-4xl font-semibold inline-block mt-0'>About</a> <br />
+      <a href="#Works" className='text-4xl font-semibold inline-block mt-10'>Support</a> <br />
+      <a href="#FAQ" className='text-4xl font-semibold inline-block mt-10'>FAQs</a> <br />
+      <a href="#FAQ" className='text-4xl font-semibold inline-block mt-10'>Trak for Schools</a> <br />
       <div class="relative inline-block text-gray-700 mt-10">
         <select className="appearance-none border border-gray-300 rounded-md py-2 px-2 pr-7 
         focus:outline-none focus:ring-2 focus:ring-e11d49 
         ">
-          <option value="en" >English</option>
-          <option value="hi">Hindi</option>
-          <option value="fi" >Finish</option>
-          <option value="sv" >Swedish</option>
+          <option value="en" >EN</option>
+          <option value="hi">HI</option>
+          <option value="fi" >FI</option>
+          <option value="sv" >SWE</option>
         </select>
         <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
         <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 448 512">

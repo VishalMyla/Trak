@@ -65,7 +65,7 @@ function Works() {
     ]
 
     return (
-        <div className='my-40 flex flex-col items-center   justify-center mx-auto max-md:mx-1.5 max-md:block  '>
+        <div className='my-20 flex flex-col items-center   justify-center mx-auto max-md:mx-1.5 max-md:block  '>
             <img
                 ref={arrowRef}
                 id="arrow"
@@ -96,7 +96,7 @@ function Works() {
 
 
                     </div>
-                    <AnimatedPath className="h-[37rem] left-12   max-md:left-5 max-md:-top-24 max-md:h-[50rem]"
+                    <AnimatedPath className="h-[37rem] left-12   max-md:left-24 max-md:-top-32 max-md:h-[55rem]"
                         svgpath="M2.4303 51.706C207.959 -39.7872 638.47 -67.0804 716.289 555.692C751.124 957.864 1069.11 1093.1 1380.3 1024.49"
                         pathId="dottedLine1"
                         arrowRef={arrowRef} 

@@ -43,16 +43,18 @@ const Home = () => {
      
        </h1>
 
-       <h1 className='  fontClass font-medium  my-10 lg:hidden max-md:block max-md:text-4xl'>
-       Your dream career isn’t a faraway destination – it’s a journey. Trak makes sure you’re on the                        , every step of the way.
-      
-          <span className='text-[#39DC8E] fontClassFastHand font-medium flex flex-col items-start'>
-            right path
-            <img src={sign} className='h-10 max-md:h-5 inline ' /></span> 
-           ,every step of the way.
-         
 
+       <h1 className='w-[80%] max-md:w-full fontClass font-medium text-7xl max-md:text-4xl my-10 lg:hidden max-md:block'>
+          Your dream career isn’t a faraway 
+          destination – it’s a journey.Trak makes
+          sure you’re on the  <span className='text-[#39DC8E] fontClassFastHand font-medium '>
+             right path,
+           </span> 
+            <span className='inline '> step of the way.</span>
+       
+     
        </h1>
+
 
         <div className='flex w-full justify-between'>
           <div>
@@ -70,19 +72,19 @@ const Home = () => {
 
         </div>
 
-        <section className='my-20 overflow-hidden'>
+        <section  id='Soon' className='my-20 overflow-hidden'>
           <Soon />
         </section>
 
-        <section className='my-5'>
+        <section  id='Works' className='my-5'>
           <Works />
         </section>
 
-        <section className='my-20'>
+        <section id='FAQ' className='my-20'>
           <FAQ />
         </section>
 
-        <section className='my-20'>
+        <section  id='About' className='my-20'>
           <About />
         </section>
 
