@@ -6,7 +6,7 @@ function About() {
 
     return (
         <div className='my-52'>
-           <Heading txt = "About" />
+           <Heading txt = "About Us" />
             <div className='w-[70%] max-md:w-full mx-auto flex justify-evenly my-16 max-md:flex-col max-md:justify-center'>
 
 

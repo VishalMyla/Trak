@@ -32,16 +32,14 @@ const Home = () => {
     </div>
   ) : null
 }
-        <h1 className='w-[70%] max-md:w-full fontClass font-medium text-7xl max-md:text-4xl my-10 lg:block max-md:hidden'>
+        <h1 className='w-[80%] max-md:w-full fontClass font-medium text-7xl max-md:text-4xl my-10 lg:block max-md:hidden'>
           Your dream career isn’t a faraway <br />
-          destination – it’s a journey.<br />
-          Trak makes sure you’re on the
-          <span className='flex max-md:flex-col'>
-          <span className='text-[#39DC8E] fontClassFastHand font-medium flex flex-col items-start'>
-            right path
-            <img src={sign} className='h-10 max-md:h-5 inline' /></span> 
-            <span className='inline '>,every step of the way.</span>
-          </span>
+          destination – it’s a journey.Trak makes<br />
+          sure you’re on the  <span className='text-[#39DC8E] fontClassFastHand font-medium '>
+             right path
+           </span> 
+            <span className='inline '>,every <br/> step of the way.</span>
+       
      
        </h1>
 
@@ -76,7 +74,7 @@ const Home = () => {
           <Soon />
         </section>
 
-        <section className='my-20'>
+        <section className='my-5'>
           <Works />
         </section>
 
