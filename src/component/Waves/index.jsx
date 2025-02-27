@@ -41,12 +41,12 @@ const SmokeEmulsion = () => {
           return prevIndex;
         }
       });
-    }, 200); // Adjust the delay as needed
+    }, 100); // Adjust the delay as needed
 
     // Clear the interval when the component unmounts
     return () => clearInterval(interval);
   }, []);
-  
+
   if (!isVisible) {
     return null;
   }
@@ -54,7 +54,7 @@ const SmokeEmulsion = () => {
     <div className="relative w-screen h-screen overflow-hidden fc-loader_overlay-fill">
       {/* Black Background */}
       <div
-        className={`absolute inset-0 bg-black transition-opacity duration-500 ${
+        className={`absolute inset-0 bg-black transition-opacity duration-100 ${
           activeIndex === smokeSequence.length - 1 ? "opacity-0" : "opacity-100"
         }`}
       ></div>
@@ -66,7 +66,7 @@ const SmokeEmulsion = () => {
             key={smoke.id}
             src={smoke.src}
             alt={smoke.id}
-            className={`absolute inset-0 w-full h-full transition-opacity duration-500 ${
+            className={`absolute inset-0 w-full h-full transition-opacity duration-100 ${
               index === activeIndex ? "opacity-100" : "opacity-0"
             }`}
             style={{
