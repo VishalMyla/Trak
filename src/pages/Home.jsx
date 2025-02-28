@@ -61,7 +61,9 @@ const Home = () => {
             <p className='mt-20'>
               AI-Powered Personalized Pathways with Exciting Milestones to Turn <br /> Your Dreams into Reality.
             </p>
-            <Button txt="Explore My Career Path with Trak" />
+            <Button txt="Explore My Career Path with Trak"
+            className=''
+            navigateTo='error' />
 
           </div>
           
