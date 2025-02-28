@@ -34,14 +34,14 @@ function ErrorPage() {
 
         ) : (
           <section>
-            <div className='w-[50%] mx-auto  my-16 max-md:w-full max-md:px-5 max-md:mb-80 max-md:my-10'>
-              <h1 className='text-4xl '>Oops! We’re Not Live in Your Location Yet 🚧</h1>
+            <div className='w-[50%] mx-auto  my-16 max-md:w-full max-md:px-5 max-md:mb-64 '>
+              <h1 className='text-4xl max-md:text-2xl '>Oops! We’re Not Live in Your Location Yet 🚧</h1>
               <p className='text-lg  max-md:text-sm mt-6'>Looks like you’re trying to access Trak from outside Rajasthan, India. We’re currently rolling out our AI-powered career pathways exclusively in Rajasthan – but don’t worry, we’re expanding soon to help more people achieve their career dreams!</p>
               <p className='text-lg  max-md:text-sm mt-6'>✨ Want to be the first to know when we launch in your area? </p>
               <Button txt="Sign up for Early Access" />
             </div>
             <footer className=' bg-black py-10 px-10 max-md:px-5 max-md:py-5 fixed bottom-0 w-full '>
-              <div className='flex justify-between items-center mt-10 max-md:flex-col'>
+              <div className='flex justify-between items-center mt-10 max-md:mt-5 max-md:flex-col'>
                 <p className='text-sm text-white'>© 2025 — Copyright</p>
 
                 <span className='flex justify-between my-5'>
