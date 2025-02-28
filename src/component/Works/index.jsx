@@ -96,7 +96,7 @@ function Works() {
 
 
                     </div>
-                    <AnimatedPath className="h-[37rem] left-12   max-md:left-24 max-md:-top-32 max-md:h-[55rem]"
+                    <AnimatedPath className="h-[37rem] left-12   max-md:-left-32 max-md:-top-14 max-md:h-[31rem] max-md:w-[37rem]"
                         svgpath="M2.4303 51.706C207.959 -39.7872 638.47 -67.0804 716.289 555.692C751.124 957.864 1069.11 1093.1 1380.3 1024.49"
                         pathId="dottedLine1"
                         arrowRef={arrowRef} 
@@ -107,7 +107,7 @@ function Works() {
                 </div>
 
 
-                <div className=' flex flex-col items-end mt-40 max-md:mt-10 max-md:w-full  '>
+                <div className=' flex flex-col items-end mt-40 max-md:mt-3 max-md:w-full  '>
                     <img src={Work2} alt="step1" className=' h-28' />
                     <h1 className='text-xl font-semibold mt-3.5'>See your path</h1>
                     <div className='w-[40%] max-md:w-[40%] mt-3.5  ml-6'>
@@ -143,7 +143,7 @@ function Works() {
                         </div>
                     </div>
                     <AnimatedPath
-                        className="h-[37rem] left-1   max-md:left-0 max-md:-top-44"
+                        className="h-[37rem] left-1   max-md:left-0 max-md:-top-44  max-md:w-[27rem]"
                         svgpath="M1180.68 2.55774C1087.34 210.201 868.946 345.129 612.982 214.172C206.299 25.3335 36.6516 287.155 2.66342 441.671" // Bottom-to-top
                         pathId="dottedLine2"
                         arrowRef={arrowRef} 
@@ -168,7 +168,7 @@ function Works() {
                             </ul>
                         </div>
                     </div>
-                    <AnimatedPath className="h-[37rem] left-14 -top-48 max-md:-top-96 "
+                    <AnimatedPath className="h-[37rem]  left-14 -top-48 max-md:-top-96 "
                         svgpath="M2.4303 51.706C207.959 -39.7872 638.47 -67.0804 716.289 555.692C751.124 957.864 1069.11 1093.1 1380.3 1024.49"
                         pathId="dottedLine3"
                         arrowRef={arrowRef} 

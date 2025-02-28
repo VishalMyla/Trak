@@ -40,10 +40,10 @@ export default Header
 function HamBurger(params) {
   return (
     <div className=' backdrop-blur-lg py-20 w-full px-24  mt-8 absolute hamburger-slide-in  z-20 h-screen '>
-      <a href="#About" className='text-4xl font-semibold inline-block mt-0'>About</a> <br />
-      <a href="#Works" className='text-4xl font-semibold inline-block mt-10'>Support</a> <br />
-      <a href="#FAQ" className='text-4xl font-semibold inline-block mt-10'>FAQs</a> <br />
-      <a href="#FAQ" className='text-4xl font-semibold inline-block mt-10'>Trak for Schools</a> <br />
+      <a href="#About" className='text-4xl max-md:text-2xl font-semibold inline-block mt-0'>About</a> <br />
+      <a href="#Works" className='text-4xl  max-md:text-2xl font-semibold inline-block mt-10'>Support</a> <br />
+      <a href="#FAQ" className='text-4xl  max-md:text-2xl font-semibold inline-block mt-10'>FAQs</a> <br />
+      <a href="#FAQ" className='text-4xl  max-md:text-2xl font-semibold inline-block mt-10'>Trak for Schools</a> <br />
       <div class="relative inline-block text-gray-700 mt-10">
         <select className="appearance-none border border-gray-300 rounded-md py-2 px-2 pr-7 
         focus:outline-none focus:ring-2 focus:ring-e11d49 

@@ -49,7 +49,7 @@ const FAQ = () => {
             <span className="text-lg max-md:text-sm font-semibold">0{index + 1}</span>
             <span className="ml-5 max-md:ml-2 text-xl max-md:text-sm font-semibold">{faq.question}</span>
             <span
-              className={`w-[5%] h-[230%] max-md:h-[247%]  max-md:w-[10%] inline-block p-3 ${activeIndex === index ? 'bg-[#39DC8E]':'bg-black text-white' }  text-2xl absolute -right-5 -top-5 max-md:-right-2 cursor-pointer`}
+              className={`w-[5%] h-[230%] max-md:h-[250%]  max-md:w-[10%] inline-block p-3 max-md:py-3.5 ${activeIndex === index ? 'bg-[#39DC8E]':'bg-black text-white' }  text-2xl max-md:text-xl absolute -right-5 -top-5 max-md:-right-2 cursor-pointer`}
             >
               {activeIndex === index ? '-' : '+'}
             </span>

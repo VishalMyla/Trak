@@ -14,24 +14,15 @@ function ErrorPage() {
   }, [])
   return (
     <>
-
-
       {
         loader ? (
-          <div className='flex  justify-center  items-center justify-items-center h-[85vh] '>
-
-          
+          <div className='flex  justify-center  items-center justify-items-center h-[85vh] '>         
             <div class="text-center">
               <div
                 class="w-16 h-16 border-4 border-dashed rounded-full animate-spin border-[#39DC8E] mx-auto"
               ></div>
-
             </div>
-
-
           </div>
-
-
         ) : (
           <section>
             <div className='w-[50%] mx-auto  my-16 max-md:w-full max-md:px-5 max-md:mb-60 max-md:my-5 '>
@@ -58,24 +49,13 @@ function ErrorPage() {
                   <p className='mr-3.5 cursor-pointer hover:text-green-600 '>HI</p>
                   <p className='mr-3.5 cursor-pointer hover:text-green-600'>SWE</p>
                   <p className='mr-3.5 cursor-pointer hover:text-green-600'>EN</p>
-
-
                 </div>
-
-
-
-
               </div>
-
-
               <hr className=' border-8 border-white rounded-sm mt-6' />
             </footer>
           </section>
         )
       }
-
-
-
     </>
   )
 }

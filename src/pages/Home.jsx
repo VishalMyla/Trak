@@ -32,7 +32,7 @@ const Home = () => {
     </div>
   ) : null
 }
-        <h1 className='w-[80%] max-md:w-full fontClass font-medium text-7xl max-md:text-4xl my-10 lg:block max-md:hidden'>
+        <h1 className='w-[80%] max-md:w-full fontClass font-medium text-6xl max-md:text-4xl my-10 lg:block max-md:hidden displayMe'>
           Your dream career isn’t a faraway <br />
           destination – it’s a journey.Trak makes<br />
           sure you’re on the  <span className='text-[#39DC8E] fontClassFastHand font-medium '>
@@ -44,7 +44,7 @@ const Home = () => {
        </h1>
 
 
-       <h1 className='w-[80%] max-md:w-full fontClass font-medium text-7xl max-md:text-4xl my-10 lg:hidden max-md:block'>
+       <h1 className=' max-md:w-full fontClass font-medium text-7xl max-md:text-4xl my-10 lg:hidden max-md:block '>
           Your dream career isn’t a faraway 
           destination – it’s a journey.Trak makes
           sure you’re on the  <span className='text-[#39DC8E] fontClassFastHand font-medium '>

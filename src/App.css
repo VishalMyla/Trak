@@ -200,3 +200,10 @@ path {
     opacity: 0;
   }
 }
+
+@media screen and (max-width: 769px) {
+ .displayMe{
+  display: none;
+ }
+  
+}
