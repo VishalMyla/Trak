@@ -11,7 +11,8 @@ import { motion } from "motion/react"
 import Button from '../component/Button'
 import sign from '../assets/scribble.svg'
 import waves from '../assets/waves.svg'
-import { svg } from 'motion/react-client'
+
+
 const Home = () => {
   const [showOverlay, setShowOverlay] = useState(true);
 
@@ -56,7 +57,7 @@ const Home = () => {
        </h1>
 
 
-        <div className='flex w-full justify-between'>
+        <div className='flex w-full justify-between max-md:flex-col'>
           <div>
             <p className='mt-20'>
               AI-Powered Personalized Pathways with Exciting Milestones to Turn <br /> Your Dreams into Reality.
@@ -67,8 +68,7 @@ const Home = () => {
 
           </div>
           
-        {/* <Cycle /> */}
-
+           <Cycle/>
 
 
 

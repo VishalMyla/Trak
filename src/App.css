@@ -46,12 +46,14 @@ body {
     stroke-dashoffset: 0;
   }
   to {
-    stroke-dashoffset: 10; /* Adjust based on the length of the path */
+    stroke-dashoffset:40; /* Adjust based on the length of the path */
   }
 }
 
 path {
   animation: moveDots 1s linear infinite;
+  z-index:-800;
+  
 }
 
 .gradient-background {
