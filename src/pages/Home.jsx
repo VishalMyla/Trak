@@ -11,6 +11,7 @@ import { motion } from "motion/react"
 import Button from '../component/Button'
 import sign from '../assets/scribble.svg'
 import waves from '../assets/waves.svg'
+import Scribble from '../assets/scribble.svg'
 
 
 const Home = () => {
@@ -33,25 +34,35 @@ const Home = () => {
     </div>
   ) : null
 }
-        <h1 className='w-[80%] max-md:w-full fontClass font-medium text-6xl max-md:text-4xl my-10 lg:block max-md:hidden displayMe'>
+        <h1 className='w-[80%] max-md:w-full fontClass relative font-medium text-6xl max-md:text-4xl my-10 lg:block max-md:hidden displayMe'>
           Your dream career isn’t a faraway <br />
           destination – it’s a journey.Trak makes<br />
-          sure you’re on the  <span className='text-[#39DC8E] fontClassFastHand font-medium '>
-             right path
-           </span> 
-            <span className='inline '>,every <br/> step of the way.</span>
+          sure you’re on the &nbsp; 
+          <span className='inline-block'>
+          <span className='text-[#39DC8E] fontClassFastHand font-medium '>
+              right path
+             <img src={Scribble} alt="scrible lines"  className='h-6'/>
+           </span>
+            </span> 
+           
+            <span className='inline '>,every <br/> <span className='font-medium  absolute top-[11.5rem] inline-block'>step of the way.</span></span>
        
      
        </h1>
 
 
        <h1 className=' max-md:w-full fontClass font-medium text-7xl max-md:text-4xl my-10 lg:hidden max-md:block '>
-          Your dream career isn’t a faraway 
-          destination – it’s a journey.Trak makes
-          sure you’re on the  <span className='text-[#39DC8E] fontClassFastHand font-medium '>
-             right path,
-           </span> 
-            <span className='inline '> step of the way.</span>
+       Your dream career isn’t a faraway <br />
+          destination – it’s a journey.Trak makes<br />
+          sure you’re on the &nbsp; 
+          <span className='inline-block'>
+          <span className='text-[#39DC8E] fontClassFastHand font-medium '>
+              right path
+             <img src={Scribble} alt="scrible lines"  className='h-6'/>
+           </span>
+            </span> 
+           
+            <span className='inline '>,every <br/> <span className='font-medium  absolute top-[11.5rem] max-md:top-[24.5rem] inline-block'>step of the way.</span></span>
        
      
        </h1>
