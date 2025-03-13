@@ -51,7 +51,7 @@ const SmokeEmulsion = () => {
     return null;
   }
   return (
-    <div className="relative w-screen h-screen overflow-hidden fc-loader_overlay-fill">
+    <div className="relative w-screen h-screen overflow-hidden fc-loader_overlay-fill z-50">
       {/* Black Background */}
       <div
         className={`absolute inset-0 bg-black transition-opacity duration-100 ${
