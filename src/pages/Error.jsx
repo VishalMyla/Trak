@@ -31,7 +31,7 @@ function ErrorPage() {
               <p className='text-lg  max-md:text-sm mt-6 max-md:mt-3'>✨ Want to be the first to know when we launch in your area? </p>
               <Button txt="Sign up for Early Access" 
               className='!mt-5'
-              navigateTo=''/>
+              navigateTo='pathway'/>
             </div>
             <footer className=' bg-black py-10 px-10 max-md:px-5 max-md:py-5 fixed bottom-0 w-full '>
               <div className='flex justify-between items-center mt-10 max-md:mt-5 max-md:flex-col'>
