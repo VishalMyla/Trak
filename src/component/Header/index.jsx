@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import Logo from '../../assets/Logo.svg'
-
+import { useNavigate } from 'react-router-dom'
 function Header() {
   const [Isclicked, setIsclicked] = useState()
+  const navigate = useNavigate()
   return (
     <>
       <div className=' flex px-24 max-md:px-8 py-5 justify-between items-center  '>
@@ -24,7 +25,8 @@ function Header() {
           <img src={Logo} alt="logo" className=' h-6 ml-6' />
         </div>
 
-        <button className='bg-white border-[1px] border-black py-2.5 text-sm px-7 cursor-pointer  rounded-sm btnShadow'> Try Us</button>
+        <button className='bg-white border-[1px] border-black py-2.5 text-sm px-7 cursor-pointer  rounded-sm btnShadow'
+        onClick={()=> navigate('/error')}> Try Us</button>
 
       </div>
       {Isclicked &&

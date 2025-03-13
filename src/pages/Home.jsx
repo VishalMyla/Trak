@@ -55,7 +55,7 @@ const Home = () => {
        Your dream career isn’t a faraway <br />
           destination – it’s a journey.Trak makes<br />
           sure you’re on the &nbsp; 
-          <span className='inline-block'>
+          <span className='inline-block  -z-50'>
           <span className='text-[#39DC8E] fontClassFastHand font-medium '>
               right path
              <img src={Scribble} alt="scrible lines"  className='h-6'/>
