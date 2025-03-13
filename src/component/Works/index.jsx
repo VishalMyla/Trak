@@ -200,7 +200,7 @@ function Works() {
                     />
                 </div>
             </section>
-           <Button txt = " Start My Personalized Path Today"/>
+           <Button txt = " Start My Personalized Path Today" navigateTo="pathway"/>
         </div>
     )
 }
