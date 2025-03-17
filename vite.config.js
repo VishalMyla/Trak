@@ -10,12 +10,7 @@ export default defineConfig({
     tailwindcss() ,
     
     ],
-    build: {
-      outDir: 'dist'
-    },
-    server: {
-      historyApiFallback: true
-    }
+  
    
   
 })
