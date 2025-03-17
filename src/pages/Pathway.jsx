@@ -5,18 +5,21 @@ import Stage2 from "../component/Pathway/Stage2";
 import Stage3 from "../component/Pathway/Stage3";
 import Stage4 from "../component/Pathway/Stage4";
 import Stage5 from "../component/Pathway/Stage5";
+import UpskillComplete from "../component/Pathway/UpskillComplete";
 
 function Pathway() {
   const [currentStage, setCurrentStage] = useState(1);
   const [loading, setLoading] = useState(false);
   const [targetStage, setTargetStage] = useState(null);
+  const [showCompletion, setShowCompletion] = useState(false);
   
   const stageRefs = {
     1: useRef(null),
     2: useRef(null),
     3: useRef(null),
     4: useRef(null),
-    5: useRef(null)
+    5: useRef(null),
+    completion: useRef(null)
   };
   
   const loaderRef = useRef(null);
@@ -25,6 +28,8 @@ function Pathway() {
   useEffect(() => {
     // Set initial positions for stages that aren't currently showing
     Object.keys(stageRefs).forEach(stage => {
+      if (stage === 'completion') return;
+      
       const stageNum = parseInt(stage);
       if (stageNum !== currentStage && stageRefs[stage].current) {
         gsap.set(stageRefs[stage].current, {
@@ -46,6 +51,17 @@ function Pathway() {
       return () => clearTimeout(timer);
     }
   }, [loading, targetStage]);
+  
+  // Automatically transition to completion screen after Stage5
+  useEffect(() => {
+    if (currentStage === 5 && !showCompletion) {
+      const timer = setTimeout(() => {
+        handleCompletionTransition();
+      }, 3000); // Wait 3 seconds after Stage5 appears before showing completion
+      
+      return () => clearTimeout(timer);
+    }
+  }, [currentStage, showCompletion]);
   
   const handleStageTransition = (nextStage) => {
     const currentRef = stageRefs[currentStage].current;
@@ -97,6 +113,36 @@ function Pathway() {
         }
       });
     }
+  };
+  
+  const handleCompletionTransition = () => {
+    const currentRef = stageRefs[5].current;
+    const completionRef = stageRefs.completion.current;
+    
+    // Animate current stage out
+    gsap.to(currentRef, {
+      x: "-100%",
+      opacity: 0,
+      duration: 0.7,
+      ease: "power2.inOut",
+      onComplete: () => {
+        setShowCompletion(true);
+        
+        // Make sure the completion stage is positioned correctly before animating in
+        gsap.set(completionRef, {
+          x: "100%",
+          opacity: 0
+        });
+        
+        // Animate completion stage in
+        gsap.to(completionRef, {
+          x: "0%",
+          opacity: 1,
+          duration: 0.7,
+          ease: "power2.inOut"
+        });
+      }
+    });
   };
   
   const completeStageTransition = (nextStage) => {
@@ -153,15 +199,24 @@ function Pathway() {
           </div>
         </div>
       ) : (
-        [1, 2, 3, 4, 5].map(stage => (
+        <>
+          {[1, 2, 3, 4, 5].map(stage => (
+            <div
+              key={stage}
+              ref={stageRefs[stage]}
+              className={`w-full h-full ${currentStage === stage && !showCompletion ? 'flex' : 'hidden'} justify-center items-center`}
+            >
+              {currentStage === stage && !showCompletion && getStageComponent(stage)}
+            </div>
+          ))}
+          
           <div
-            key={stage}
-            ref={stageRefs[stage]}
-            className={`w-full h-full ${currentStage === stage ? 'flex' : 'hidden'} justify-center items-center`}
+            ref={stageRefs.completion}
+            className={`w-full h-full ${showCompletion ? 'flex' : 'hidden'} justify-center items-center`}
           >
-            {currentStage === stage && getStageComponent(stage)}
+            {showCompletion && <UpskillComplete />}
           </div>
-        ))
+        </>
       )}
     </div>
   );
