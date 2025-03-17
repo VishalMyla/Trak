@@ -30,11 +30,11 @@ const StatusCard = ({ title, description, imageSrc, intext, bgColor, isSelected,
         >
           <div className='m-2 h-5/7 rounded-3xl flex flex-col gap-2' style={{ backgroundColor: bgColor }}>
             <div className="p-4">
-              <div className='w-9 h-9 border-2 border-black rounded-full'>
+              <div className='w-9 h-9 border-2 border-black rounded-full flex items-center justify-center '>
                 <img 
                   src={markIcon} 
                   alt="Selected" 
-                  className={`w-8 h-8 transition-opacity duration-300 ${isSelected ? 'opacity-100' : 'opacity-0'}`} 
+                  className={`w-9 h-9 transition-opacity duration-300 ${isSelected ? 'opacity-100' : 'opacity-0'}`} 
                 />
               </div>
             </div>
