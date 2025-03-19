@@ -58,7 +58,7 @@ const Home = () => {
           <span className='inline-block '>
           <span className='text-[#39DC8E] fontClassFastHand font-medium  -z-50'>
               right path
-             <img src={Scribble} alt="scrible lines"  className='h-6'/>
+             <img src={Scribble} alt="scrible lines"  className='h-6 max-md:h-3'/>
            </span>
             </span> 
            
