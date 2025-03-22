@@ -156,7 +156,7 @@ function Stage1({ onUiUxClick }) {
                   onClick={onUiUxClick}
                   onMouseEnter={handleMouseEnterDesktop}
                   onMouseLeave={handleMouseLeaveDesktop}
-                  className="border border-black rounded-full py-2 md:py-3 px-4 md:px-6 text-base md:text-lg font-normal hover:bg-gray-100 transition-colors duration-200"
+                  className="border border-black rounded-full py-2 md:py-3 px-4 md:px-6 text-base md:text-lg font-normal hover:bg-gray-100 transition-colors duration-200 cursor-pointer"
                 >
                   {career}
                 </button>
