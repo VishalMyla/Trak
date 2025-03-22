@@ -71,7 +71,7 @@ const Home = () => {
         <div className='flex w-full justify-between max-md:flex-col'>
           <div>
             <p className='mt-20'>
-              AI-Powered Personalized Pathways with Exciting Milestones to Turn <br /> Your Dreams into Reality.Master In-Demand Skills with Your Personal AI Mentor – Fast, Practical, and Market-Aligned.
+              Master In-Demand Skills with Your Personal AI Mentor – Fast, Practical, and Market-Aligned.
             </p>
             <Button txt="Explore Skills That Get Me Hired"
             className=''

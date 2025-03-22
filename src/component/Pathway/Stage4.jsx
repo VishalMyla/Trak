@@ -25,8 +25,8 @@ function Stage4({onNextClick4}) {
   <button 
     className="bg-white border-[1px] border-black py-2.5 px-7 text-sm mt-5 sm:mt-10 rounded-xl btnShadow cursor-pointer w-full sm:w-auto hidden sm:block"
     onClick={onNextClick4}>
-    <span>Upskill & Generate</span><br />
-    <span>My Pathway</span>
+    <span>Upskill with</span><br />
+    <span>My AI Mentor</span>
     
   </button>
   
@@ -34,7 +34,7 @@ function Stage4({onNextClick4}) {
   <button 
     className="bg-white border-[1px] border-black py-2.5 px-7 text-sm mt-5 sm:mt-10 rounded-xl btnShadow cursor-pointer w-full sm:hidden"
     onClick={onNextClick4}>
-    Upskill & Generate My Pathway
+    Upskill with My AI Mentor
     
   </button>
 </div>

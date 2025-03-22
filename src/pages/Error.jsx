@@ -29,7 +29,7 @@ function ErrorPage() {
               <h1 className='text-4xl max-md:text-2xl '>Oops! We’re Not Live in Your Location Yet 🚧</h1>
               <p className='text-lg  max-md:text-sm mt-6 max-md:mt-3'>Looks like you’re trying to access Trak from outside Rajasthan, India. We’re currently rolling out our AI-powered skill mentor exclusively in Rajasthan – but don’t worry, we’re expanding soon to help more people upskill and reach their career goals!</p>
               <p className='text-lg  max-md:text-sm mt-6 max-md:mt-3'>✨ Want to be the first to know when we launch in your area? </p>
-              <Button txt="Upskill with My AI Mentor" 
+              <Button txt="Sign up for Early Access" 
               className='!mt-5'
               navigateTo='pathway'/>
             </div>

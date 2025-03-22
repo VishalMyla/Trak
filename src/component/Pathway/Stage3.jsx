@@ -154,7 +154,7 @@ function Stage3({ onNextClick3 }) {
                     value={option}
                     checked={formData.learningStyle === option}
                     onChange={() => handleRadioChange(option)}
-                    className="w-4 h-4 sm:w-5 sm:h-5 rounded-md border-gray-400 border-1 checked:bg-[#4A3AFF] checked:border-[#4A3AFF] appearance-none focus:outline-none hover:border-black cursor-pointer transition-all duration-200"
+                    className="w-4 h-4 sm:w-5 sm:h-5 rounded-md border-gray-400 border-1 checked:bg-green-500 checked:border-black appearance-none focus:outline-none hover:border-black cursor-pointer transition-all duration-200"
                   />
                   <label
                     htmlFor={`option-${idx}`}
