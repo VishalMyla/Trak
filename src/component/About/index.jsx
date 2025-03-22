@@ -5,9 +5,9 @@ import Heading from '../Heading'
 function About() {
 
     return (
-        <div className='my-52'>
+        <div className='my-52 border-2 '>
            <Heading txt = "About Us" />
-            <div className='w-[70%] max-md:w-full mx-auto flex justify-evenly my-16 max-md:flex-col max-md:justify-center max-md:items-center'>
+            <div className='w-[70%] max-md:w-full   ml-72 flex justify-center my-16 max-md:flex-col max-md:justify-center max-md:items-center'>
 
 
                 <div className={`w-[50%] max-md:w-full flex flex-col items-start  `}>
