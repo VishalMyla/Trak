@@ -5,21 +5,18 @@ import Stage2 from "../component/Pathway/Stage2";
 import Stage3 from "../component/Pathway/Stage3";
 import Stage4 from "../component/Pathway/Stage4";
 import Stage5 from "../component/Pathway/Stage5";
-import UpskillComplete from "../component/Pathway/UpskillComplete";
 
 function Pathway() {
   const [currentStage, setCurrentStage] = useState(1);
   const [loading, setLoading] = useState(false);
   const [targetStage, setTargetStage] = useState(null);
-  const [showCompletion, setShowCompletion] = useState(false);
   
   const stageRefs = {
     1: useRef(null),
     2: useRef(null),
     3: useRef(null),
     4: useRef(null),
-    5: useRef(null),
-    completion: useRef(null)
+    5: useRef(null)
   };
   
   const loaderRef = useRef(null);
@@ -28,8 +25,6 @@ function Pathway() {
   useEffect(() => {
     // Set initial positions for stages that aren't currently showing
     Object.keys(stageRefs).forEach(stage => {
-      if (stage === 'completion') return;
-      
       const stageNum = parseInt(stage);
       if (stageNum !== currentStage && stageRefs[stage].current) {
         gsap.set(stageRefs[stage].current, {
@@ -51,17 +46,6 @@ function Pathway() {
       return () => clearTimeout(timer);
     }
   }, [loading, targetStage]);
-  
-  // Automatically transition to completion screen after Stage5
-  useEffect(() => {
-    if (currentStage === 5 && !showCompletion) {
-      const timer = setTimeout(() => {
-        handleCompletionTransition();
-      }, 3000); // Wait 3 seconds after Stage5 appears before showing completion
-      
-      return () => clearTimeout(timer);
-    }
-  }, [currentStage, showCompletion]);
   
   const handleStageTransition = (nextStage) => {
     const currentRef = stageRefs[currentStage].current;
@@ -115,36 +99,6 @@ function Pathway() {
     }
   };
   
-  const handleCompletionTransition = () => {
-    const currentRef = stageRefs[5].current;
-    const completionRef = stageRefs.completion.current;
-    
-    // Animate current stage out
-    gsap.to(currentRef, {
-      x: "-100%",
-      opacity: 0,
-      duration: 0.7,
-      ease: "power2.inOut",
-      onComplete: () => {
-        setShowCompletion(true);
-        
-        // Make sure the completion stage is positioned correctly before animating in
-        gsap.set(completionRef, {
-          x: "100%",
-          opacity: 0
-        });
-        
-        // Animate completion stage in
-        gsap.to(completionRef, {
-          x: "0%",
-          opacity: 1,
-          duration: 0.7,
-          ease: "power2.inOut"
-        });
-      }
-    });
-  };
-  
   const completeStageTransition = (nextStage) => {
     const nextRef = stageRefs[nextStage].current;
     const isForward = nextStage > currentStage;
@@ -187,8 +141,8 @@ function Pathway() {
     }
   };
   
-  return (
-    <div className="w-full h-[90vh] flex flex-col justify-center items-center overflow-hidden">
+   return (
+    <div className="w-full h-[90vh] flex flex-col justify-center items-center overflow-hidden relative">
       {loading ? (
         <div className='flex justify-center items-center justify-items-center h-[85vh]'>
           <div className="text-center">
@@ -199,24 +153,48 @@ function Pathway() {
           </div>
         </div>
       ) : (
-        <>
+        <div className="w-full h-full relative">
           {[1, 2, 3, 4, 5].map(stage => (
             <div
               key={stage}
               ref={stageRefs[stage]}
-              className={`w-full h-full ${currentStage === stage && !showCompletion ? 'flex' : 'hidden'} justify-center items-center`}
+              className={`absolute top-0 left-0 w-full h-full ${currentStage === stage ? 'flex' : 'hidden'} justify-center items-center`}
             >
-              {currentStage === stage && !showCompletion && getStageComponent(stage)}
+              {currentStage === stage && getStageComponent(stage)}
             </div>
           ))}
-          
-          <div
-            ref={stageRefs.completion}
-            className={`w-full h-full ${showCompletion ? 'flex' : 'hidden'} justify-center items-center`}
-          >
-            {showCompletion && <UpskillComplete />}
+        </div>
+      )}
+      
+      {/* Render footer when on Stage 5 */}
+      {currentStage === 5 && (
+        <footer className='bg-black fixed bottom-0 left-0 w-full px-10 py-5 md:px-10 lg:px-20'>
+          <div className='container mx-auto'>
+            <div className='flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0'>
+              <p className='text-sm text-white text-center md:text-left'>© 2025 — Copyright</p>
+              
+              <div className='flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-4'>
+                <div className='flex space-x-2.5'>
+                  <span className='bg-white inline-block text-black rounded-md px-2 py-1 text-lg md:text-2xl rotate-6'>
+                    step
+                  </span>
+                  <span className='bg-white inline-block text-black rounded-md px-2 py-1 text-lg md:text-2xl -rotate-6'>
+                    destination
+                  </span>
+                </div>
+              </div>
+              
+              <div className='flex justify-center md:justify-end text-white space-x-3.5'>
+                <p className='cursor-pointer hover:text-green-600'>FI</p>
+                <p className='cursor-pointer hover:text-green-600'>HI</p>
+                <p className='cursor-pointer hover:text-green-600'>SWE</p>
+                <p className='cursor-pointer hover:text-green-600'>EN</p>
+              </div>
+            </div>
+            
+            <hr className='border-2 border-white rounded-sm mt-4 md:mt-6' />
           </div>
-        </>
+        </footer>
       )}
     </div>
   );

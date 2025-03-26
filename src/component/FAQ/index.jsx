@@ -5,7 +5,7 @@ const FAQ = () => {
     {
       id: 1,
       question: 'What is Trak?',
-      answer: 'Trak is an AI-powered platform that creates personalized learning pathways to help you achieve your career goals. It identifies your skill gaps, provides tailored content, and guides you step by step with dynamic milestones.',
+      answer: 'Trak is an AI-powered platform that helps you upskill with personalized guidance, real-time support, and hands-on learning. It identifies your strengths and gaps, delivers tailored content, and supports you step by step with your own AI mentor.',
     },
     {
       id: 2,

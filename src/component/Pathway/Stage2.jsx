@@ -34,7 +34,7 @@ const StatusCard = ({ title, description, imageSrc, intext, bgColor, isSelected,
                 <img 
                   src={markIcon} 
                   alt="Selected" 
-                  className={`w-9 h-9 transition-opacity duration-300 ${isSelected ? 'opacity-100' : 'opacity-0'}`} 
+                  className={` object-cover transition-opacity duration-300 ${isSelected ? 'opacity-100' : 'opacity-0'}`} 
                 />
               </div>
             </div>
