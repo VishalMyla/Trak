@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Logo from '../../assets/Logo.svg'
 import { useNavigate } from 'react-router-dom'
+import LangDetector from '../LanguageDetector'
 
 function Header() {
   const [Isclicked, setIsclicked] = useState(false)
@@ -52,13 +53,13 @@ function Header() {
         </button>
       </div>
       {Isclicked && (
-        <HamBurger onNavigate={handleHashNavigation} />
+        <HamBurger onNavigate={handleHashNavigation} setIsclicked = {setIsclicked} />
       )}
     </>
   )
 }
 
-function HamBurger({ onNavigate }) {
+function HamBurger({ onNavigate , setIsclicked }) {
   return (
     <div className='backdrop-blur-lg py-20 w-full px-24 mt-8 absolute hamburger-slide-in z-20 h-screen'>
       <a 
@@ -72,11 +73,8 @@ function HamBurger({ onNavigate }) {
         About
       </a> <br />
       <a 
-        href="#" 
-        onClick={(e) => {
-          e.preventDefault();
-          onNavigate('#Support');
-        }} 
+        href="mailto:chandani.soni@trakpe.com" 
+        
         className='text-4xl max-md:text-2xl font-semibold inline-block mt-10'
       >
         Support
@@ -99,22 +97,10 @@ function HamBurger({ onNavigate }) {
         }} 
         className='text-4xl max-md:text-2xl font-semibold inline-block mt-10'
       >
-        Trak for Schools
+       Trak for Enterprises 
       </a> <br />
       <div className="relative inline-block text-gray-700 mt-10">
-        <select 
-          className="appearance-none border border-gray-300 rounded-md py-2 px-2 pr-7 focus:outline-none focus:ring-2 focus:ring-e11d49"
-        >
-          <option value="en">EN</option>
-          <option value="hi">HI</option>
-          <option value="fi">FI</option>
-          <option value="sv">SWE</option>
-        </select>
-        <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-          <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 448 512">
-            <path fill="#000000" d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
-          </svg>
-        </div>
+        <LangDetector setIsclicked = {setIsclicked}/>
       </div>
     </div>
   )

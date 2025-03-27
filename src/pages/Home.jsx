@@ -8,8 +8,10 @@ import Soon from '../component/ComingSoon'
 import SmokeEmulsion from '../component/Waves'
 import Button from '../component/Button'
 import Scribble from '../assets/scribble.svg'
+import { useTranslation } from 'react-i18next'
 
 const Home = () => {
+  const { t} = useTranslation()
   const [showOverlay, setShowOverlay] = useState(true);
   
   useEffect(() => {
@@ -34,11 +36,10 @@ const Home = () => {
           text-6xl md:text-6xl sm:text-5xl max-sm:text-4xl 
           my-10 leading-tight
         '>
-          Your dream career isn't a faraway destination – it's a journey. 
-          Trak makes sure you're on the &nbsp;
+       {t('pageTitle')} &nbsp;
           <span className='inline-block relative'>
             <span className='text-[#39DC8E] fontClassFastHand font-medium'>
-              right path
+            {t('pageScribbleTxt')}
               <img 
                 src={Scribble} 
                 alt="scribble lines" 
@@ -49,16 +50,16 @@ const Home = () => {
               />
             </span>
           </span>
-          , every step of the way.
+           {t('pageEndTxt')}
         </h1>
 
         <div className='flex w-full justify-between max-md:flex-col'>
           <div>
             <p className='mt-20 max-md:mt-10'>
-              Master In-Demand Skills with Your Personal AI Mentor – Fast, Practical, and Market-Aligned.
+              {t('DemandTxt')}
             </p>
             <Button 
-              txt="Explore Skills That Get Me Hired"
+              txt={t('BtnTxt')}
               className=''
               navigateTo='error' 
             />

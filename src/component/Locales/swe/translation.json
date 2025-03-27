@@ -1,0 +1,156 @@
+{
+    "pageTitle": "Din drömkarriär är inte ett avlägset mål – det är en resa. Trak ser till att du är på rätt väg.",
+    "pageScribbleTxt": "på rätt väg.",
+    "pageEndTxt": ", varje steg på vägen.",
+    "DemandTxt": "Behärska efterfrågade färdigheter med din personliga AI-mentor – snabbt, praktiskt och marknadsanpassat.",
+    "BtnTxt": "Utforska färdigheter som ger mig jobb",
+    "CycleTxt1": "Lärande",
+    "CycleTxt2": "Kompetensutveckling",
+    "CycleTxt3": "Framgång",
+    "CycleTxt4": "Avancemang",
+    "SoonHeading": "Två som live andra på väg..",
+    "SoonSubTxt": {
+        "1txt": "AIoT (AI + IoT) & Edge Analytics",
+        "2txt": "Automationsingenjör",
+        "3txt": "AI & Data",
+        "4txt": "Cybersäkerhet",
+        "5txt": "Tillväxthacking & Viral Marknadsföring",
+        "6txt": "Produktdesign",
+        "7txt": "3D-modellering",
+        "8txt": "Dataforskare"
+    },
+    "WorksHeading": "Hur det fungerar",
+    "Workingsubtxt": "Mobilbank skiljer sig från mobila betalningar",
+    "Workingsubtxt1": "som innebär användning av en",
+    "Workingsubtxt2": "mobil enhet",
+    "Workingtxt1": {
+        "htxt1": "Känn dig själv",
+        "ptxt1": "Varje resa börjar med att förstå var du är. Trak börjar med att lära känna dig: dina färdigheter, erfarenheter, karriärmål och preferenser. Genom en snabb bedömning samlar vi in den insikt som behövs för att skräddarsy en väg bara för dig.",
+        "list1": "Vad du gör: Fyll i en snabb färdighets- och karriärmålsundersökning.",
+        "list2": "Vad Trak gör: Använder AI för att analysera dina input och identifiera dina färdighetsgap och möjligheter."
+    },
+    "Workingtxt2": {
+        "htxt1": "Se Din Kompetensplan",
+        "ptxt1": "En plan byggd för resultat. När Trak förstår dina mål och nuvarande färdigheter skapar det en realtidsplan för färdigheter skräddarsydd för dig. Detta är inte en engångslista — den utvecklas när du lär dig, anpassar dig och växer.",
+        "list1": "Vad du gör: Följ din personliga färdighetsstrategi — steg-för-steg-lärande med inbyggd flexibilitet.",
+        "list2": "Vad Trak gör: Använder live-jobbmarknadsdata och dina framsteg för att kontinuerligt förfina din väg för maximal påverkan."
+    },
+    "Workingtxt3": {
+        "htxt1": "Börja Lära Dig På Ditt Sätt",
+        "ptxt1": "Eftersom en storlek aldrig passar alla, dyker du in i innehållet som Trak tillhandahåller, anpassat till dina preferenser. Oavsett om det är videotutorials, artiklar eller praktiska projekt, lär du dig på det sätt som passar dig bäst.",
+        "list1": "Vad du hittar: Inlärningsinnehåll dynamiskt personifierat baserat på din stil och takt.",
+        "list2": "Vad som håller dig igång: Regelbundna uppdateringar och framstegsspårning håller dig motiverad."
+    },
+    "Btntxt2": "Hur Det Fungerar",
+    "FAQHeading": "Vanliga ",
+    "FAQHeading1": "Frågor",
+    "faqData": {
+        "FAQ1": {
+            "question1": "Vad är Trak?",
+            "answer1": "Trak är en AI-driven plattform som hjälper dig att utveckla dina färdigheter med personlig vägledning, realtidsstöd och praktiskt lärande. Den identifierar dina styrkor och luckor, levererar skräddarsytt innehåll och stöder dig steg för steg med din egen AI-mentor."
+        },
+        "FAQ2": {
+            "question": "Hur följer jag mina framsteg?",
+            "answer": "Dina framsteg visas på en instrumentpanel som visar slutförda moduler, uppnådda milstolpar och vad som är nästa steg på din väg."
+        },
+        "FAQ3": {
+            "question": "Kostar det något att använda Trak?",
+            "answer": "Trak erbjuder både gratis och premiumplaner. Medan gratisplanen ger grundläggande funktioner, låser premiumplanen upp avancerade verktyg, exklusiva milstolpar och skräddarsydda resurser."
+        },
+        "FAQ4": {
+            "question": "Kan jag ändra mina mål efter att jag har börjat?",
+            "answer": "Absolut! Traks vägar är dynamiska och utvecklas när dina mål eller omständigheter förändras. Du har kontroll hela vägen."
+        },
+        "FAQ5": {
+            "question": "Är Trak lämpligt för nybörjare?",
+            "answer": "Trak erbjuder en blandning av videor, artiklar, praktiska projekt och mer, allt anpassat till dina inlärningspreferenser och takt."
+        }
+    },
+    "About": "Om Oss",
+    "Abouttxt1": {
+        "htxt": "Vår Historia",
+        "ptxt1": "Trak föddes från en enkel men kraftfull idé – att överbrygga klyftan mellan ambition och möjlighet genom AI-drivet färdighetsträning. Vår resa började med ett uppdrag att stärka arbetssökande, studenter och yrkesverksamma genom personliga inlärningsupplevelser som är i linje med verkliga branschkrav.",
+        "ptxt2": "Från våra rötter i Rajasthan, Indien, har vi vuxit till en teknikorienterad kompetensutvecklingsplattform som använder en AI-mentor för att bedöma färdigheter, vägleda lärande och stödja användare steg för steg för att behärska efterfrågade kompetenser.",
+        "ptxt3": "Drivna av innovation och en passion för omskolning fortsätter vi att utvecklas – och säkerställer att varje lärande kan bygga en meningsfull, framtidssäker karriär med Trak – Din AI-drivna kompetensmentor."
+    },
+    "Abouttxt2": {
+        "htxt": "Kontakta Oss",
+        "ptxt1": "Har du frågor eller behöver stöd? Vi är här för att hjälpa! Oavsett om du söker karriärvägledning, partnerskapsmöjligheter eller bara vill säga hej, kontakta oss",
+        "pEmail": " E-post: support@trak.com",
+        "pLocation": "Plats: Rajasthan, Indien",
+        "ptxt2": "Låt oss bygga din karriärplan tillsammans med Trak – Din AI-drivna Karriärkompanjon!"
+    },
+    "Footer": {
+        "Ftxt1": "Din drömkarriär är inte ett avlägset ",
+        "Ftxt2": "mål ",
+        "Ftxt3": " det är en resa. Trak ser till att du är på rätt väg, varje ",
+        "Ftxt4": "steg ",
+        "Ftxt5": "på vägen.",
+        "Ftxt6": "© 2025 — Upphovsrätt"
+    },
+    "ErrorPage": {
+    "ErrorHeading": "Oj då! Vi är inte live i din region ännu 🚧",
+    "ErrorSub1": "Det verkar som att du försöker använda Trak utanför Rajasthan, Indien. Vi erbjuder för närvarande vår AI-drivna mentor endast i Rajasthan – men oroa dig inte, vi expanderar snart för att hjälpa fler att förbättra sina färdigheter och nå sina karriärmål!",
+    "ErrorSub2": "✨ Vill du vara först med att veta när vi lanserar i din region?",
+    "Btntxt3": "Registrera dig för tidig åtkomst"
+},
+"PathWay": {
+    "PathHtxt": "Välj ditt karriärmål",
+    "PathSubTxt": "Hitta din väg",
+    "careerOptions": {
+        "Otp1": "Läkare",
+        "Otp2": "Advokat",
+        "Otp3": "Mjukvaruutvecklare",
+        "Otp4": "UI/UX Designer",
+        "Otp5": "Ingenjör"
+    },
+    "learningOptions": {
+        "Otp1": "Praktiska projekt",
+        "Otp2": "Strukturerade kurser",
+        "Otp3": "Mentorskap och coaching",
+        "Otp4": "Lärande genom arbete (praktikjobb)",
+        "Otp5": "Självständigt online-lärande"
+    },
+    "Questions": {
+        "Q1": "Vilka är de viktiga färdigheter du redan har?",
+        "Q1sub": "färdigheter",
+        "Q2": "Hur säker känner du dig på din karriärresa just nu?",
+        "Q2sub": "självförtroende",
+        "Q3": "Vilket är ditt föredragna sätt att lära?",
+        "Q3sub": "lärstil",
+        "Q4": "Hur snabbt vill du nå ditt karriärmål?",
+        "Q4sub": "tidslinje"
+    },
+    "QHeading": "Låt oss börja med din karriärplan!",
+    "Profile": "Din profil",
+    "mathes": "matchningar",
+    "percent": "66%",
+    "ptxt": "med detta karriärmål",
+    "BtnTxt4": "Ansök om jobb",
+    "BtnTxt5": "Utveckla färdigheter med",
+    "ptxt1": "Min AI-mentor",
+    "BtnTxt6": "Utveckla färdigheter med Min AI-mentor",
+    "Stage5txt1": "Din personliga AI",
+    "Stage5txt2": "Mentor är",
+    "Stage5txt3": "under utbildning...",
+    "Stage5txt4": "Lanseras snart.",
+    "stage51": {
+        "htxt": "Utveckla färdigheter och skapa min väg",
+        "htxt2": "UI Designer",
+        "stepsData": {
+            "data1": "Jobb",
+            "data2": "Avancerad praktik",
+            "data3": "Avancerade kurser",
+            "data4": "Mellannivå kurser",
+            "data5": "Grundkurser"
+        }
+    },
+    "steppertxt1": "Personlig information",
+    "steppertxt2": "Namn",
+    "steppertxt3": "Övrigt",
+    "steppertxt4": "Nuvarande status",
+    "UpskillHtxt": "Utvecklingsväg fullständig!",
+    "UpskillpTxt": "Banan är redo, vägen är klar – det är dags att ta första steget mot din framgång med TRAK!"
+}
+
+}

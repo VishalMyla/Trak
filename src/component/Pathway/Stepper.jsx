@@ -1,7 +1,8 @@
 
 import FromTick from '../../assets/pathway/formtick.svg'
-
+import { useTranslation } from 'react-i18next'
 const Stepper = () => {
+  const { t } = useTranslation();
   return (
     <div className="flex space-x-4 items-start">
       {/* Sidebar */}
@@ -39,15 +40,15 @@ const Stepper = () => {
       {/* Content */}
       <div>
         <div>
-            <h2 className="text-lg font-normal">Personal Information</h2>
+            <h2 className="text-lg font-normal">{t('PathWay.steppertxt1')}</h2>
             <div className="flex flex-col gap-1 ">
-              <span className="text-[#4A3AFF] text-end">Name</span>
-              <span className="text-gray-400 text-end">Other</span>
+              <span className="text-[#4A3AFF] text-end">{t('PathWay.steppertxt2')}</span>
+              <span className="text-gray-400 text-end">{t('PathWay.steppertxt3')}</span>
             </div>
             
         </div>
         <div>
-        <h2 className="mt-6 text-lg font-normal">Current Status</h2>
+        <h2 className="mt-6 text-lg font-normal">{t('PathWay.steppertxt4')}</h2>
         </div>
         
        

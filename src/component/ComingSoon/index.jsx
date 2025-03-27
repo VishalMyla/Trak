@@ -1,10 +1,11 @@
 import React from 'react'
 import Heading from '../Heading'
-
+import { useTranslation } from 'react-i18next'
 function Soon() {
+  const { t } = useTranslation()
   return (
     <div className='my-40'>
-       <Heading txt = " Two as live other as coming soon.."/>
+       <Heading txt = {t('SoonHeading')}/>
         <div className='flex justify-evenly mt-32 enable-animation-left max-md:w-[145%]'>
         <Rectangle className={`gradient-background max-md:px-2 py-5`} txt= "⁠AIoT(AI + IoT) & Edge Analytics"/>
         <Rectangle className={`gradient-background2 max-md:px-2 py-5 max-md:py-6`} txt ="Automation Engineer"/>

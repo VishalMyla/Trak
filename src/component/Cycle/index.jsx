@@ -1,9 +1,9 @@
-// Cycle.jsx
-import React, { useRef, useEffect } from 'react';
 
+import React, { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next'
 
 const Cycle = () => {
-
+  const { t} = useTranslation()
 
   return (
     <svg width="1141" height="300" viewBox="0 0 1141 716" fill="none" xmlns="http://www.w3.org/2000/svg" 
@@ -11,26 +11,26 @@ const Cycle = () => {
 <g filter="url(#filter0_d_1445_916)">
 <rect x="288.262" y="545.645" width="279.509" height="100" rx="45.5359" className='text-center p-1.5' fill="white" shape-rendering="crispEdges"/>
 <foreignObject  x="288.262" y="545.645" width="279.509" height="100"  rx="45.5359">
-<p xmlns="http://www.w3.org/1999/xhtml" className='text-6xl py-4 text-center  fontClass'>Success</p>
+<p xmlns="http://www.w3.org/1999/xhtml" className='text-6xl py-4 text-center  fontClass'>{t('CycleTxt3')}</p>
 </foreignObject>
 </g>
 <g filter="url(#filter1_d_1445_916)">
 <rect x="654.125" y="340.777" width="374.076" height="100" className='text-center p-1.5'
  rx="39.6313" fill="white" shape-rendering="crispEdges"/>
 <foreignObject x="654.125" y="340.777" width="374.076" height="100"  rx="45.5359">
-<p xmlns="http://www.w3.org/1999/xhtml" className='text-6xl py-4 text-center  fontClass'>Advancement</p>
+<p xmlns="http://www.w3.org/1999/xhtml" className='text-6xl py-4 text-center  fontClass'>{t('CycleTxt4')}</p>
 </foreignObject>
 </g>
 <g filter="url(#filter2_d_1445_916)">
 <rect x="793.078" y="33.2852" width="291.22" height="100" className='text-center p-2' rx="37.9321" fill="white" shape-rendering="crispEdges"/>
 <foreignObject x="793.078" y="33.2852" width="291.22" height="100" rx="45.5359">
-<p xmlns="http://www.w3.org/1999/xhtml" className='text-6xl py-4 text-center  fontClass'>Upskilling</p>
+<p xmlns="http://www.w3.org/1999/xhtml" className='text-6xl py-4 text-center  fontClass'>{t('CycleTxt2')}</p>
 </foreignObject>
 </g>
 <g filter="url(#filter3_d_1445_916)">
 <rect x="56" y="109.164" width="299.261" height="100"  rx="42.3021" fill="white" shape-rendering="crispEdges"/>
 <foreignObject x="56" y="109.164" width="299.261" height="100"  rx="45.5359">
-<p xmlns="http://www.w3.org/1999/xhtml" className='text-6xl py-4 text-center  fontClass'>Learning</p>
+<p xmlns="http://www.w3.org/1999/xhtml" className='text-6xl py-4 text-center  fontClass'>{t('CycleTxt1')}</p>
 </foreignObject>
 </g>
 <g filter="url(#filter4_d_1445_916)">

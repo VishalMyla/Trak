@@ -1,31 +1,32 @@
 import React, { useState } from 'react';
-
-const FAQ = () => {
+import { useTranslation } from 'react-i18next'
+const FAQ = () => { 
+  const {t} = useTranslation()
   const faqData = [
     {
       id: 1,
-      question: 'What is Trak?',
-      answer: 'Trak is an AI-powered platform that helps you upskill with personalized guidance, real-time support, and hands-on learning. It identifies your strengths and gaps, delivers tailored content, and supports you step by step with your own AI mentor.',
+      question: t('faqData.FAQ1.question1'),
+      answer: t('faqData.FAQ1.answer1'),
     },
     {
       id: 2,
-      question: ' How do I track my progress?',
-      answer: 'Your progress is displayed on a dashboard, showing completed modules, milestones achieved, and what’s next on your pathway.',
+      question: t('faqData.FAQ2.question'),
+      answer:t('faqData.FAQ2.answer'),
     },
     {
       id: 3,
-      question: 'Is there a cost to use Trak?',
-      answer: 'Trak offers both free and premium plans. While the free plan provides essential features, the premium plan unlocks advanced tools, exclusive milestones, and tailored resources.',
+      question: t('faqData.FAQ3.question'),
+      answer: t('faqData.FAQ3.answer'),
     },
     {
         id: 4,
-        question: 'Can I change my goals after starting?',
-        answer:'Absolutely! Trak’s pathways are dynamic and evolve as your goals or circumstances change. You’re in control every step of the way.'
+        question: t('faqData.FAQ4.question'),
+        answer: t('faqData.FAQ4.answer'),
     },
     {
          id:5,
-         question: 'Is Trak suitable for beginners?',
-         answer: 'Trak offers a mix of videos, articles, hands-on projects, and more, all tailored to your learning preferences and pace.'
+         question: t('faqData.FAQ5.question'),
+         answer: t('faqData.FAQ5.answer'),
     },
   ];
 
@@ -39,9 +40,8 @@ const FAQ = () => {
   return (
     <div className=" my-40">
       <h1 className="text-4xl text-center font-semibold  fontClassFAQ mb-20">
-        Frequently 
-        Asked
-        <b className="text-[#39DC8E] font-semibold"> Questions</b>
+    {t('FAQHeading')} &nbsp;
+        <b className="text-[#39DC8E] font-semibold">{t('FAQHeading1')} </b>
       </h1>
       {faqData.map((faq, index) => (
         <div className="border-2 border-black mb-5 py-4 rounded-md px-5 max-md:px-2 mx-auto pt-5 mt-12 w-3xl max-md:w-full " key={faq.id}>

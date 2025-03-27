@@ -1,13 +1,15 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { useTranslation } from 'react-i18next'
 
 function Stage1({ onUiUxClick }) {
+  const { t} = useTranslation()
   const careerOptions = [
-    "Doctor",
-    "Lawyer",
-    "Software Developer",
-    "UI/UX Designer",
-    "Engineer",
+  t('PathWay.careerOptions.Otp1'),
+  t('PathWay.careerOptions.Otp2'),
+  t('PathWay.careerOptions.Otp3'),
+  t('PathWay.careerOptions.Otp4'),
+  t('PathWay.careerOptions.Otp5'),
   ];
 
   const uiUxRefMobile = useRef(null);
@@ -94,9 +96,9 @@ function Stage1({ onUiUxClick }) {
     <div className="h-full w-full px-4 md:px-6 lg:px-8 py-8 flex flex-col justify-center gap-8 md:gap-12 lg:gap-16">
       <div className="flex flex-col gap-2">
         <div className="text-2xl sm:text-3xl md:text-4xl text-center font-semibold">
-          Choose Your Career Goal
+          {t('PathWay.PathHtxt')}
         </div>
-        <div className="text-base sm:text-lg text-center font-normal">Find Your Path</div>
+        <div className="text-base sm:text-lg text-center font-normal">{t('PathWay.PathSubTxt')}</div>
       </div>
 
       <div className="flex flex-col gap-4 md:gap-6 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl mx-auto">

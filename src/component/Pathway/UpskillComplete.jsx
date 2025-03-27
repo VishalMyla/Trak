@@ -1,6 +1,7 @@
 import Tickend from '../../assets/pathway/tickend.svg'
-
+import { useTranslation } from 'react-i18next'
 const UpskillComplete = () => {
+  const { t } = useTranslation();
   return (
    
       <div className="bg-[#ECFDE7] w-[75%] min-h-[65%] rounded-lg p-4 sm:p-6 md:p-8   text-center flex flex-col justify-center items-center gap-8">
@@ -10,10 +11,10 @@ const UpskillComplete = () => {
           </div>
         </div>
         <h1 className="text-green-500 text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 md:mb-6">
-          Upskill Pathway complete!
+      {t('UpskillHtxt')}
         </h1>
         <p className="text-gray-700 text-lg sm:text-xl md:text-2xl max-w-xs sm:max-w-lg md:max-w-2xl mx-auto">
-          The track is set, the pathway is ready—it&apos;s time to take the first step toward your success with TRAK!
+        {t('UpskillpTxt')}
         </p>
       </div>
     

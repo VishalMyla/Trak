@@ -1,7 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next'
 
 function Stage3({ onNextClick3 }) {
+    const { t} = useTranslation()
   const [currentStep, setCurrentStep] = useState(0);
   const [error, setError] = useState(false);
   const [formData, setFormData] = useState({
@@ -63,34 +65,34 @@ function Stage3({ onNextClick3 }) {
   };
 
   const learningOptions = [
-    "Hands-on projects",
-    "Structured courses",
-    "Mentorship & coaching",
-    "Learning by doing (internships/jobs)",
-    "Self-paced online learning"
+    t('PathWay.learningOptions.Otp1'),
+    t('PathWay.learningOptions.Otp2'),
+    t('PathWay.learningOptions.Otp3'),
+    t('PathWay.learningOptions.Otp4'),
+    t('PathWay.learningOptions.Otp5'),
   ];
 
   const questions = [
     {
-      question: "What are the key skills you already have?",
+      question: t('PathWay.Questions.Q1'),
       type: "text",
-      name: "skills"
+      name: t('PathWay.Questions.Q1sub')
     },
     {
-      question: "How confident do you feel about your career journey right now?",
+      question:  t('PathWay.Questions.Q2'),
       type: "text",
-      name: "confidence"
+      name:  t('PathWay.Questions.Q2sub')
     },
     {
-      question: "What's your preferred way of learning?",
+      question:  t('PathWay.Questions.Q3'),
       type: "radio",
-      name: "learningStyle",
+      name:  t('PathWay.Questions.Q3sub'),
       options: learningOptions
     },
     {
-      question: "How soon do you want to achieve your career goal?",
+      question: t('PathWay.Questions.Q4'),
       type: "text",
-      name: "timeline"
+      name: t('PathWay.Questions.Q4sub')
     }
   ];
 
@@ -114,7 +116,7 @@ function Stage3({ onNextClick3 }) {
 
   return (
     <div className="w-[71.42%] h-[71.42%] bg-white flex flex-col gap-6 items-center justify-between p-4">
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-center">Let&apos;s get you more</h1>
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-center">{t('PathWay.QHeading')}</h1>
       
       <div className="w-full mt-4">
         <motion.div

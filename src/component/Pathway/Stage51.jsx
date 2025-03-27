@@ -4,8 +4,9 @@ import Number2 from '../../assets/pathway/2.svg';
 import Number3 from '../../assets/pathway/3.svg';
 import Number4 from '../../assets/pathway/4.svg';
 import Number5 from '../../assets/pathway/5.svg';
-
+import { useTranslation } from 'react-i18next'
 function Stage5() {
+  const { t } = useTranslation();
   const [activeStep, setActiveStep] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
   const [animationProgress, setAnimationProgress] = useState(0);
@@ -14,11 +15,11 @@ function Stage5() {
   const animationRef = useRef(null);
   
   const stepsData = [
-    { number: "1", title: "Job", imagelink: Number5 },
-    { number: "2", title: "Advance Internship", imagelink: Number4 },
-    { number: "3", title: "Advanced Courses", imagelink: Number3 },
-    { number: "4", title: "Intermediate Courses", imagelink: Number2 },
-    { number: "5", title: "Basic Courses", imagelink: Number1 }
+    { number: "1", title: t('PathWay.stage51.stepsData.data1'), imagelink: Number5 },
+    { number: "2", title:  t('PathWay.stage51.stepsData.data2'), imagelink: Number4 },
+    { number: "3", title:  t('PathWay.stage51.stepsData.data3'), imagelink: Number3 },
+    { number: "4", title:  t('PathWay.stage51.stepsData.data4'), imagelink: Number2 },
+    { number: "5", title: t('PathWay.stage51.stepsData.data5'), imagelink: Number1 }
   ];
   
   // Calculate positions for each step and goal
@@ -208,7 +209,7 @@ function Stage5() {
       >
         <h1 className="text-2xl md:text-4xl font-bold text-center mb-8 md:mb-16 transition-opacity duration-500"
             style={{ opacity: animationProgress > 0 ? Math.min(1, animationProgress * 3) : 0 }}>
-          Upskill & Generate My Pathway
+     { t('PathWay.stage51.htxt')}
         </h1>
         
         <div className="relative w-full h-full flex justify-center items">
@@ -230,7 +231,7 @@ function Stage5() {
               transform: `translate(-50%, -50%) scale(${positions.goalPosition.scale})`
             }}
           >
-            <h3 className="text-lg md:text-xl font-bold">UI Designer</h3>
+            <h3 className="text-lg md:text-xl font-bold"> { t('PathWay.stage51.htxt2')}</h3>
           </div>
           
           {/* Step Components */}

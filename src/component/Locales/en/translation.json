@@ -1,0 +1,171 @@
+{
+    "pageTitle": " Your dream career isn't a faraway destination – it's a journey.  Trak makes sure you're on the ",
+    "pageScribbleTxt": "right path.",
+    "pageEndTxt": "  , every step of the way.",
+    "DemandTxt": "Master In-Demand Skills with Your Personal AI Mentor – Fast, Practical, and Market-Aligned.",
+    "BtnTxt": "Explore Skills That Get Me Hired",
+    "CycleTxt1": "Learning",
+    "CycleTxt2": "Upskilling",
+    "CycleTxt3": "Success",
+    "CycleTxt4": "Advancement",
+    "SoonHeading": "Two as live other as coming soon..",
+    "SoonSubTxt": {
+        "1txt": "⁠AIoT(AI + IoT) & Edge Analytics",
+        "2txt": "Automation Engineer",
+        "3txt": "AI & Data",
+        "4txt": "CyberSecurity",
+        "5txt": "Growth Hacking & Viral Marketing",
+        "6txt": "Product Design",
+        "7txt": "3D Modeling",
+        "8txt": "Data Scientists"
+    },
+    "WorksHeading": "How its works",
+    "Workingsubtxt": "Mobile banking differs from mobile payments",
+    "Workingsubtxt1": "which involves the use of a",
+    "Workingsubtxt2": "mobile device",
+    "Workingtxt1": {
+        "htxt1": "Know yourself",
+        "ptxt1": "Every journey starts with understanding where you are.Trak begins by learning about you: your skills, experiences, career goals, and preferences. Through a quick assessment, we gather the insights needed to tailor a pathway just for you.",
+        "list1": "What you do:Complete a quick skills and career goal survey.",
+        "list2": "What Trak does: Analyzes your inputs using AI to identify your skill gaps and opportunities."
+    },
+    "Workingtxt2": {
+        "htxt1": "See Your Skill Plan",
+        "ptxt1": "A Plan, built for results.Once Trak understands your goals and current skills, it creates a real-time skill plan tailored just for you. This isn’t a one-time list — it evolves as you learn, adapt, and grow.",
+        "list1": "What you do: Follow your personalized skill strategy — step-by-step learning with built-in flexibility.",
+        "list2": "What Trak does: Uses live job market data and your progress to continuously refine your path for maximum impact."
+    },
+    "Workingtxt3": {
+        "htxt1": "Start Learning, Your Way",
+        "ptxt1": "Because one size never fits all Dive into the content Trak provides, tailored to your preferences. Whether it’s video tutorials, articles, or hands-on projects, you’ll learn in the way that works best for you.",
+        "list1": "What you’ll find: Learning content dynamically personalized based on your style and pace.",
+        "list2": "What keeps you going: Regular updates and progress tracking keep you motivated."
+    },
+    "Btntxt2": "How it Works",
+    "FAQHeading": "Frequently Asked ",
+    "FAQHeading1": "Questions",
+
+    "faqData": {
+        "FAQ1": {
+            "question1": "What is Trak?",
+            "answer1": "Trak is an AI-powered platform that helps you upskill with personalized guidance, real-time support, and hands-on learning. It identifies your strengths and gaps, delivers tailored content, and supports you step by step with your own AI mentor."
+        },
+        "FAQ2": {
+            "question": " How do I track my progress?",
+            "answer": "Your progress is displayed on a dashboard, showing completed modules, milestones achieved, and what’s next on your pathway."
+        },
+        "FAQ3": {
+            "question": "Is there a cost to use Trak?",
+            "answer": "Trak offers both free and premium plans. While the free plan provides essential features, the premium plan unlocks advanced tools, exclusive milestones, and tailored resources."
+        },
+        "FAQ4": {
+            "question": "Can I change my goals after starting?",
+            "answer": "Absolutely! Trak’s pathways are dynamic and evolve as your goals or circumstances change. You’re in control every step of the way."
+        },
+        "FAQ5": {
+            "question": "Is Trak suitable for beginners?",
+            "answer": "Trak offers a mix of videos, articles, hands-on projects, and more, all tailored to your learning preferences and pace."
+        }
+    },
+    "About": "About Us",
+    "Abouttxt1": {
+        "htxt": "Our History",
+        "ptxt1": "Trak was born from a simple yet powerful idea – to bridge the gap between ambition and opportunity using AI-driven skill training. Our journey began with a mission to empower job seekers, students, and professionals through personalized learning experiences aligned with real industry demands.",
+        "ptxt2": "From our roots in Rajasthan, India, we’ve grown into a tech-first upskilling platform that uses an AI Mentor to assess skills, guide learning, and support users step-by-step in mastering in-demand competencies.",
+        "ptxt3": "Driven by innovation and a passion for reskilling, we continue to evolve—ensuring every learner can build a meaningful, future-ready career with Trak – Your AI-Powered Skill Mentor."
+    },
+    "Abouttxt2": {
+        "htxt": "Contact Us",
+        "ptxt1": "Have questions or need support? We're here to help! Whether you're looking for career guidance, partnership opportunities, or just want to say hello, reach out to us",
+        "pEmail": " Email: support@trak.com",
+        "pLocation": "Location: Rajasthan, India",
+        "ptxt2": "Let's build your career plan together with Trak – Your AI-Powered Career Companion!"
+    },
+    "Footer": {
+        "Ftxt1": " Your dream career isn’t a faraway",
+        "Ftxt2": "destination ",
+        "Ftxt3": " it’s a journey. Trak makes sure you’re on the right path, every ",
+        "Ftxt4": "step",
+        "Ftxt5": " of the way.",
+        "Ftxt6": "© 2025 — Copyright"
+    },
+  "ErrorPage":{
+    "ErrorHeading" : "Oops! We’re Not Live in Your Location Yet 🚧",
+    "ErrorSub1" : "Looks like you’re trying to access Trak from outside Rajasthan, India. We’re currently rolling out our AI-powered skill mentor exclusively in Rajasthan – but don’t worry, we’re expanding soon to help more people upskill and reach their career goals!",
+    "ErrorSub2" : "✨ Want to be the first to know when we launch in your area?",
+    "Btntxt3": "Sign up for Early Access"
+
+   },
+   "PathWay" : {
+      "PathHtxt" : "Choose Your Career Goal",
+      "PathSubTxt" : "Find Your Path",
+      "careerOptions" : {
+        "Otp1":"Doctor",
+        "Otp2":"Lawyer",
+        "Otp3":"Software Developer",
+        "Otp4":"UI/UX Designer",
+        "Otp5":"Engineer"
+      },
+   "learningOptions" : {
+       "Otp1" :  "Hands-on projects",
+       "Otp2" :   "Structured courses",
+       "Otp3" :  "Mentorship & coaching",
+       "Otp4" :  "Learning by doing (internships/jobs)",
+       "Otp5" :  "Self-paced online learning"
+   },
+
+   "Questions" : {
+    "Q1" : "What are the key skills you already have?",
+    "Q1sub" : "skills",
+    "Q2" : "How confident do you feel about your career journey right now?",
+    "Q2sub" : "confidence",
+    "Q3" : "What's your preferred way of learning?",
+    "Q3sub" : "learningStyle",
+    "Q4" :"How soon do you want to achieve your career goal?",
+    "Q4sub" : "timeline"
+   },
+ 
+    "QHeading" : "Let's get started with your career plan!",
+     "Profile" : "Your Profie",
+     "mathes" : "mathes",
+     "percent" : "66%",
+     "ptxt" : "with this career goal",
+     "BtnTxt4" : "Apply for job",
+     "BtnTxt5" : "Upskill with",
+     "ptxt1" : "My AI Mentor",
+     "BtnTxt6" : " Upskill with My AI Mentor",
+
+     "Stage5txt1" : " Your Personal AI",
+     "Stage5txt2" : "Mentor is in",
+      "Stage5txt3" : " training...",
+      "Stage5txt4" : "  Launching soon.",
+
+      "stage51" :{
+        "htxt" : "Upskill & Generate My Pathway",
+         "htxt2" : "UI Designer",
+       "stepsData" : {
+         "data1" : "Job",
+         "data2" : "Advance Internship",
+         "data3" : "Advanced Courses",
+         "data4" : "Intermediate Courses",
+         "data5" : "Basic Courses"
+
+       }
+
+      },
+      "steppertxt1" : "Personal Information",
+      "steppertxt2" : "Name",
+      "steppertxt3" : "Other",
+      "steppertxt4" : "Current Status",
+      
+      "UpskillHtxt" : " Upskill Pathway complete!",
+      "UpskillpTxt" : " The track is set, the pathway is ready—it's time to take the first step toward your success with TRAK!"
+
+      
+   }
+
+
+  
+
+    
+}

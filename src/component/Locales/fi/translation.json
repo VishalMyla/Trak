@@ -1,0 +1,156 @@
+{
+    "pageTitle": "Unelmiesi ura ei ole kaukainen määränpää – se on matka. Trak varmistaa, että olet oikealla tiellä.",
+    "pageScribbleTxt": "oikealla tiellä.",
+    "pageEndTxt": ", joka askeleella.",
+    "DemandTxt": "Hallitse kysytyt taidot oman AI-mentorisi avulla – nopeasti, käytännöllisesti ja markkinatietoista.",
+    "BtnTxt": "Tutki taidot, jotka auttavat sinua työllistymään",
+    "CycleTxt1": "Oppiminen",
+    "CycleTxt2": "Taitojen kehittäminen",
+    "CycleTxt3": "Menestys",
+    "CycleTxt4": "Edistyminen",
+    "SoonHeading": "Kaksi liveä muuta tulossa pian..",
+    "SoonSubTxt": {
+        "1txt": "AIoT (AI + IoT) & Reunalytiikka",
+        "2txt": "Automaatioinsinööri",
+        "3txt": "AI & Data",
+        "4txt": "Kyberturvallisuus",
+        "5txt": "Kasvuhakkerointi & viraalimarkkinointi",
+        "6txt": "Tuotesuunnittelu",
+        "7txt": "3D-mallinnus",
+        "8txt": "Data Scientists"
+    },
+    "WorksHeading": "Kuinka se toimii",
+    "Workingsubtxt": "Mobiilipankki eroaa mobiilimaksuista",
+    "Workingsubtxt1": "johon sisältyy",
+    "Workingsubtxt2": "mobiililaitteen käyttö",
+    "Workingtxt1": {
+        "htxt1": "Tunne itsesi",
+        "ptxt1": "Jokainen matka alkaa ymmärtämällä, missä olet. Trak aloittaa oppimalla sinusta: taidoistasi, kokemuksistasi, uratavoitteistasi ja mieltymyksistäsi. Nopean arvioinnin avulla keräämme tiedot, joita tarvitaan yksilöidyn polun räätälöimiseen.",
+        "list1": "Mitä teet: Täytä nopea taitoja ja uratavoitteita koskeva kysely.",
+        "list2": "Mitä Trak tekee: Analysoi antamasi tiedot AI:n avulla tunnistaakseen taitokuilusi ja mahdollisuutesi."
+    },
+    "Workingtxt2": {
+        "htxt1": "Näe Taitosuunnitelmasi",
+        "ptxt1": "Suunnitelma, rakennettu tuloksia varten. Kun Trak ymmärtää tavoitteesi ja nykyiset taitosi, se luo reaaliaikaisen taitosuunnitelman, joka on räätälöity juuri sinulle. Tämä ei ole kertaluonteinen lista — se kehittyy, kun opit, sopeudut ja kasvat.",
+        "list1": "Mitä teet: Noudata henkilökohtaista taitostrategiaasi — askel askeleelta oppimista joustavasti.",
+        "list2": "Mitä Trak tekee: Käyttää reaaliaikaisia työmarkkinatietoja ja edistymistäsi jatkuvasti mukauttaakseen polkua maksimaalisen vaikutuksen saavuttamiseksi."
+    },
+    "Workingtxt3": {
+        "htxt1": "Aloita Oppiminen Omalla Tavallasi",
+        "ptxt1": "Koska yksi koko ei koskaan sovi kaikille, sukella sisältöön, jonka Trak tarjoaa, mukautettuna mieltymyksiisi. Olipa kyseessä video-oppaat, artikkelit tai käytännön projektit, opit tavalla, joka toimii parhaiten sinulle.",
+        "list1": "Mitä löydät: Oppimissisältö dynaamisesti räätälöitynä tyylisi ja tahtisi mukaan.",
+        "list2": "Mikä pitää sinut motivoituneena: Säännölliset päivitykset ja edistymisen seuranta pitävät sinut liikkeessä."
+    },
+    "Btntxt2": "Kuinka se Toimii",
+    "FAQHeading": "Usein Kysyttyjä ",
+    "FAQHeading1": "Kysymyksiä",
+    "faqData": {
+        "FAQ1": {
+            "question1": "Mikä on Trak?",
+            "answer1": "Trak on tekoälypohjainen alusta, joka auttaa sinua kehittämään taitojasi henkilökohtaisella ohjauksella, reaaliaikaisella tuella ja käytännön oppimisella. Se tunnistaa vahvuutesi ja puutteesi, toimittaa räätälöityä sisältöä ja tukee sinua vaiheittain oman AI-mentorisi avulla."
+        },
+        "FAQ2": {
+            "question": "Kuinka seuraan edistymistäni?",
+            "answer": "Edistymistäsi näytetään hallintapaneelissa, jossa näkyvät suoritetut moduulit, saavutetut virstanpylväät ja seuraavat vaiheet polullasi."
+        },
+        "FAQ3": {
+            "question": "Onko Trakin käyttö maksullista?",
+            "answer": "Trak tarjoaa sekä ilmaisia että premium-suunnitelmia. Vaikka ilmainen suunnitelma tarjoaa perustason ominaisuuksia, premium-suunnitelma avaa kehittyneitä työkaluja, eksklusiivisia virstanpylväitä ja räätälöityjä resursseja."
+        },
+        "FAQ4": {
+            "question": "Voinko muuttaa tavoitteitani aloittamisen jälkeen?",
+            "answer": "Ehdottomasti! Trakin polut ovat dynaamisia ja kehittyvät tavoitteidesi tai olosuhteidesi muuttuessa. Sinulla on hallinta joka vaiheessa."
+        },
+        "FAQ5": {
+            "question": "Onko Trak sopiva aloittelijoille?",
+            "answer": "Trak tarjoaa sekoituksen videoita, artikkeleita, käytännön projekteja ja muuta, kaikki räätälöitynä oppimisen mieltymyksiisi ja tahtiin."
+        }
+    },
+    "About": "Tietoja Meistä",
+    "Abouttxt1": {
+        "htxt": "Historiamme",
+        "ptxt1": "Trak syntyi yksinkertaisesta mutta voimakkaasta ideasta – kaventaa kuilua kunnianhimon ja mahdollisuuden välillä tekoälyohjatun taitokoulutuksen avulla. Matkamme alkoi tehtävällä voimaannuttaa työnhakijoita, opiskelijoita ja ammattilaisia henkilökohtaisilla oppimiskokemuksilla, jotka vastaavat todellisia teollisuuden tarpeita.",
+        "ptxt2": "Juuremme sijaitsevat Rajasthanissa, Intiassa, josta olemme kasvaneet tekoälyä hyödyntäväksi taitojen kehittämisalustaksi, joka käyttää tekoälymentoria taitojen arviointiin, oppimisen ohjaamiseen ja käyttäjien tukemiseen vaiheittain hallitsemaan kysyttyjä taitoja.",
+        "ptxt3": "Innovaatioiden ja taitojen kehittämisen intohimon ajamana jatkamme kehitystä — varmistaen, että jokainen oppija voi rakentaa merkityksellisen, tulevaisuudenkestävän uran Trakin avulla – AI-voimainen taitomentori."
+    },
+    "Abouttxt2": {
+        "htxt": "Ota Yhteyttä",
+        "ptxt1": "Onko kysyttävää tai tarvitsetko tukea? Olemme täällä auttamassa! Olitpa etsimässä uraneuvontaa, kumppanuusmahdollisuuksia tai haluat vain sanoa hei, ota meihin yhteyttä",
+        "pEmail": " Sähköposti: support@trak.com",
+        "pLocation": "Sijainti: Rajasthan, Intia",
+        "ptxt2": "Luodaan yhdessä urasuunnitelmasi Trakin avulla – AI-voimainen urakumppanisi!"
+    },
+    "Footer": {
+        "Ftxt1": "Unelmiesi ura ei ole kaukainen ",
+        "Ftxt2": "määränpää ",
+        "Ftxt3": " se on matka. Trak varmistaa, että olet oikealla tiellä joka ",
+        "Ftxt4": "askel ",
+        "Ftxt5": "matkan varrella.",
+        "Ftxt6": "© 2025 — Tekijänoikeudet"
+    },
+    "ErrorPage": {
+    "ErrorHeading": "Hups! Emme ole vielä käytössä sijainnissasi 🚧",
+    "ErrorSub1": "Näyttää siltä, että yrität käyttää Trakia Rajasthanin, Intian ulkopuolelta. Tällä hetkellä tarjoamme AI-mentorointia yksinomaan Rajasthanissa – mutta älä huoli, laajennamme pian auttamaan yhä useampia kehittämään taitojaan ja saavuttamaan uratavoitteensa!",
+    "ErrorSub2": "✨ Haluatko tietää ensimmäisenä, milloin julkaisemme palvelumme alueellasi?",
+    "Btntxt3": "Ilmoittaudu varhaiselle pääsylle"
+},
+"PathWay": {
+    "PathHtxt": "Valitse uratavoitteesi",
+    "PathSubTxt": "Löydä polkusi",
+    "careerOptions": {
+        "Otp1": "Lääkäri",
+        "Otp2": "Asianajaja",
+        "Otp3": "Ohjelmistokehittäjä",
+        "Otp4": "UI/UX-suunnittelija",
+        "Otp5": "Insinööri"
+    },
+    "learningOptions": {
+        "Otp1": "Käytännön projektit",
+        "Otp2": "Strukturoidut kurssit",
+        "Otp3": "Mentorointi ja valmennus",
+        "Otp4": "Oppiminen tekemällä (harjoittelut/työt)",
+        "Otp5": "Itsenäinen verkko-oppiminen"
+    },
+    "Questions": {
+        "Q1": "Mitkä ovat keskeiset taitosi tällä hetkellä?",
+        "Q1sub": "taidot",
+        "Q2": "Kuinka varma olet urasi etenemisestä tällä hetkellä?",
+        "Q2sub": "varmuus",
+        "Q3": "Mikä on mieluisin tapa oppia?",
+        "Q3sub": "oppimistyyli",
+        "Q4": "Kuinka nopeasti haluat saavuttaa uratavoitteesi?",
+        "Q4sub": "aikataulu"
+    },
+    "QHeading": "Aloitetaan urasuunnitelmastasi!",
+    "Profile": "Profiilisi",
+    "mathes": "vastaa",
+    "percent": "66%",
+    "ptxt": "tällä uratavoitteella",
+    "BtnTxt4": "Hae työtä",
+    "BtnTxt5": "Kehitä taitojasi",
+    "ptxt1": "AI-mentorini",
+    "BtnTxt6": "Kehitä taitojasi AI-mentorini kanssa",
+    "Stage5txt1": "Henkilökohtainen AI",
+    "Stage5txt2": "Mentori on",
+    "Stage5txt3": "koulutuksessa...",
+    "Stage5txt4": "Julkaistaan pian.",
+    "stage51": {
+        "htxt": "Kehitä taitojasi ja luo oma polkusi",
+        "htxt2": "UI-suunnittelija",
+        "stepsData": {
+            "data1": "Työ",
+            "data2": "Edistynyt harjoittelu",
+            "data3": "Edistyneet kurssit",
+            "data4": "Keskitasoiset kurssit",
+            "data5": "Peruskurssit"
+        }
+    },
+    "steppertxt1": "Henkilötiedot",
+    "steppertxt2": "Nimi",
+    "steppertxt3": "Muut",
+    "steppertxt4": "Nykyinen tila",
+    "UpskillHtxt": "Taitojen kehityspolku valmis!",
+    "UpskillpTxt": "Polku on asetettu, kehityssuunnitelma valmis – nyt on aika ottaa ensimmäinen askel kohti menestystä TRAKin kanssa!"
+}
+
+}
