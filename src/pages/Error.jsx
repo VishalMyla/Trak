@@ -47,8 +47,9 @@ function ErrorPage() {
                   >{t('Footer.Ftxt2')}</span>
                 </span>
                 <div className='flex justify-between text-white'>
-                <button onClick={navigateToInstagram} className=' cursor-pointer text-white py-2 px-4 rounded-md text-sm font-semibold max-md:mt-5'>
-                © 2025 Trakpe. Follow us on Instagram</button>
+                <button onClick={navigateToInstagram} className=' cursor-pointer text-white py-2 px-4 rounded-md text-sm  max-md:mt-5'>
+                © 2025 Trakpe. Follow us on
+                <b className='font-bold'> Instagram</b> </button>
                 </div>
               </div>
               <hr className=' border-8 border-white rounded-sm mt-6' />

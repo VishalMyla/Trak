@@ -188,8 +188,9 @@ function Pathway() {
               </div>
               
               <div className='flex justify-center md:justify-end text-white space-x-3.5'>
-              <button onClick={navigateToInstagram} className=' cursor-pointer text-white py-2 px-4 rounded-md text-sm font-semibold max-md:mt-5'>
-              © 2025 Trakpe. Follow us on Instagram</button>
+              <button onClick={navigateToInstagram} className=' cursor-pointer text-white py-2 px-4 rounded-md text-sm  max-md:mt-5'>
+              © 2025 Trakpe. Follow us on
+              <b className='font-bold'> Instagram</b> </button>
               </div>
             </div>
             
