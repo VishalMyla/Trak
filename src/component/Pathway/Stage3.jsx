@@ -37,13 +37,15 @@ function Stage3({ onNextClick3 }) {
 
   const handleAdvance = () => {
     const isCurrentStepValid = () => {
+      // Use the actual key from questions array for the current step
+      const field = questions[currentStep].name;
+      
       if (currentStep === 2) {
         // For radio button step, check if an option is selected
         return formData.learningStyle !== '';
       } else {
-        // For text inputs, check if there's a value
-        const field = questions[currentStep].name;
-        return formData[field].trim() !== '';
+        // For text inputs, check if there's a value, trimming whitespace
+        return formData[field] && formData[field].trim() !== '';
       }
     };
 
@@ -52,8 +54,8 @@ function Stage3({ onNextClick3 }) {
         setCurrentStep(currentStep + 1);
         setError(false);
       } else {
-        // Check if the final step (timeline) is filled before proceeding
-        if (formData.timeline.trim() !== '') {
+        // Explicitly check the timeline field
+        if (formData.timeline && formData.timeline.trim() !== '') {
           onNextClick3();
         } else {
           setError(true);
@@ -76,39 +78,35 @@ function Stage3({ onNextClick3 }) {
     {
       question: t('PathWay.Questions.Q1'),
       type: "text",
-      name: t('PathWay.Questions.Q1sub')
+      name: 'skills'
     },
     {
       question:  t('PathWay.Questions.Q2'),
       type: "text",
-      name:  t('PathWay.Questions.Q2sub')
+      name: 'confidence'
     },
     {
       question:  t('PathWay.Questions.Q3'),
       type: "radio",
-      name:  t('PathWay.Questions.Q3sub'),
+      name: 'learningStyle',
       options: learningOptions
     },
     {
       question: t('PathWay.Questions.Q4'),
       type: "text",
-      name: t('PathWay.Questions.Q4sub')
+      name: 'timeline'
     }
   ];
 
   const currentQuestion = questions[currentStep];
   const progress = ((currentStep) / questions.length) * 100;
 
-  // Fixed radio button selection handler
   const handleRadioChange = (option) => {
-    // First update the form data
     setFormData({
       ...formData,
       learningStyle: option
     });
     
-    // Then advance to next step immediately
-    // We don't need to check if it was empty before
     setTimeout(() => {
       setCurrentStep(currentStep + 1);
     }, 500);
@@ -143,7 +141,6 @@ function Stage3({ onNextClick3 }) {
                 className={`w-full h-21 border rounded-md py-3 px-4 focus:outline-none  ${
                   error ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 '
                 }`}
-                // placeholder="Type your answer and press Enter"
               />
             ) : (
               <div className="space-y-5 md:space-y-4 lg:space-y-5 w-full border border-gray-300 px-3 sm:px-6 md:px-10 lg:px-13 py-4 sm:py-8 md:py-12 lg:py-15 rounded-lg flex flex-col">

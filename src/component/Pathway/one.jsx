@@ -92,90 +92,100 @@ function Stage1({ onUiUxClick }) {
     animationRefDesktop.current?.resume();
   };
   
-  return (
-    <div className="h-full w-full px-4 md:px-6 lg:px-8 py-8 flex flex-col justify-center gap-8 md:gap-12 lg:gap-16">
-      <div className="flex flex-col gap-2">
-        <div className="text-2xl sm:text-3xl md:text-4xl text-center font-semibold">
-          {t('PathWay.PathHtxt')}
-        </div>
-        <div className="text-base sm:text-lg text-center font-normal">{t('PathWay.PathSubTxt')}</div>
+ // Determine if the current career option is a UI/UX designer variant
+ const isUiUxDesigner = (career) => {
+  const uiUxVariants = [
+    "UI/UX Designer", 
+    "UI/UX डिज़ाइनर", 
+    "UI/UX-suunnittelija", 
+    "UI/UX Designer"  // Swedish variant
+  ];
+  return uiUxVariants.includes(career);
+};
+
+return (
+  <div className="h-full w-full px-4 md:px-6 lg:px-8 py-8 flex flex-col justify-center gap-8 md:gap-12 lg:gap-16">
+    <div className="flex flex-col gap-2">
+      <div className="text-2xl sm:text-3xl md:text-4xl text-center font-semibold">
+        {t('PathWay.PathHtxt')}
+      </div>
+      <div className="text-base sm:text-lg text-center font-normal">{t('PathWay.PathSubTxt')}</div>
+    </div>
+
+    <div className="flex flex-col gap-4 md:gap-6 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl mx-auto">
+      {/* Mobile: Stack all buttons vertically */}
+      <div className="flex flex-col sm:hidden w-full gap-4">
+        {careerOptions.map((career, index) => (
+          <button
+            key={index}
+            ref={isUiUxDesigner(career) ? uiUxRefMobile : null}
+            onClick={isUiUxDesigner(career) ? onUiUxClick : undefined}
+            onMouseEnter={isUiUxDesigner(career) ? handleMouseEnterMobile : undefined}
+            onMouseLeave={isUiUxDesigner(career) ? handleMouseLeaveMobile : undefined}
+            className={`w-full border border-black rounded-full py-2 px-4 text-base font-normal hover:bg-gray-100 transition-colors duration-200 ${
+              isUiUxDesigner(career) ? 'cursor-pointer' : 'cursor-default'
+            }`}
+          >
+            {career}
+          </button>
+        ))}
       </div>
 
-      <div className="flex flex-col gap-4 md:gap-6 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl mx-auto">
-        {/* Mobile: Stack all buttons vertically */}
-        <div className="flex flex-col sm:hidden w-full gap-4">
-          {careerOptions.map((career, index) => (
+      {/* Tablet: Two rows with buttons wrapping */}
+      <div className="hidden sm:flex md:hidden flex-wrap gap-4 justify-center">
+        {careerOptions.map((career, index) => (
+          <button
+            key={index}
+            ref={isUiUxDesigner(career) ? uiUxRefTablet : null}
+            onClick={isUiUxDesigner(career) ? onUiUxClick : undefined}
+            onMouseEnter={isUiUxDesigner(career) ? handleMouseEnterTablet : undefined}
+            onMouseLeave={isUiUxDesigner(career) ? handleMouseLeaveTablet : undefined}
+            className={`border border-black rounded-full py-2 px-5 text-base font-normal hover:bg-gray-100 transition-colors duration-200 ${
+              isUiUxDesigner(career) ? 'cursor-pointer' : 'cursor-default'
+            }`}
+          >
+            {career}
+          </button>
+        ))}
+      </div>
+
+      {/* Desktop: Two rows as in original design */}
+      <div className="hidden md:flex flex-wrap gap-6 justify-center">
+        {/* First row */}
+        <div className="w-full flex gap-4 md:gap-6 flex-row justify-center">
+          {careerOptions.slice(0, 3).map((career, index) => (
             <button
               key={index}
-              ref={career === "UI/UX Designer" ? uiUxRefMobile : null}
-              onClick={career === "UI/UX Designer" ? onUiUxClick : undefined}
-              onMouseEnter={career === "UI/UX Designer" ? handleMouseEnterMobile : undefined}
-              onMouseLeave={career === "UI/UX Designer" ? handleMouseLeaveMobile : undefined}
-              className="w-full border border-black rounded-full py-2 px-4 text-base font-normal hover:bg-gray-100 transition-colors duration-200"
+              className={`border border-black rounded-full py-2 md:py-3 px-4 md:px-6 text-base md:text-lg font-normal hover:bg-gray-100 transition-colors duration-200 ${
+                isUiUxDesigner(career) ? 'cursor-pointer' : 'cursor-default'
+              }`}
             >
               {career}
             </button>
           ))}
         </div>
 
-        {/* Tablet: Two rows with buttons wrapping */}
-        <div className="hidden sm:flex md:hidden flex-wrap gap-4 justify-center">
-          {careerOptions.map((career, index) => (
+        {/* Second row */}
+        <div className="w-full flex justify-center gap-4 md:gap-6">
+          {careerOptions.slice(3).map((career, index) => (
             <button
-              key={index}
-              ref={career === "UI/UX Designer" ? uiUxRefTablet : null}
-              onClick={career === "UI/UX Designer" ? onUiUxClick : undefined}
-              onMouseEnter={career === "UI/UX Designer" ? handleMouseEnterTablet : undefined}
-              onMouseLeave={career === "UI/UX Designer" ? handleMouseLeaveTablet : undefined}
-              className="border border-black rounded-full py-2 px-5 text-base font-normal hover:bg-gray-100 transition-colors duration-200"
+              key={index + 3}
+              ref={isUiUxDesigner(career) ? uiUxRefDesktop : null}
+              onClick={isUiUxDesigner(career) ? onUiUxClick : undefined}
+              onMouseEnter={isUiUxDesigner(career) ? handleMouseEnterDesktop : undefined}
+              onMouseLeave={isUiUxDesigner(career) ? handleMouseLeaveDesktop : undefined}
+              className={`border border-black rounded-full py-2 md:py-3 px-4 md:px-6 text-base md:text-lg font-normal hover:bg-gray-100 transition-colors duration-200 ${
+                isUiUxDesigner(career) ? 'cursor-pointer' : 'cursor-default'
+              }`}
             >
               {career}
             </button>
           ))}
-        </div>
-
-        {/* Desktop: Two rows as in original design */}
-        <div className="hidden md:flex flex-wrap gap-6 justify-center">
-          {/* First row */}
-          <div className="w-full flex gap-4 md:gap-6 flex-row justify-center">
-            {careerOptions.slice(0, 3).map((career, index) => (
-              <button
-                key={index}
-                className="border border-black rounded-full py-2 md:py-3 px-4 md:px-6 text-base md:text-lg font-normal hover:bg-gray-100 transition-colors duration-200"
-              >
-                {career}
-              </button>
-            ))}
-          </div>
-
-          {/* Second row */}
-          <div className="w-full flex justify-center gap-4 md:gap-6">
-            {careerOptions.slice(3).map((career, index) =>
-              career === "UI/UX Designer" ? (
-                <button
-                  key={index + 3}
-                  ref={uiUxRefDesktop}
-                  onClick={onUiUxClick}
-                  onMouseEnter={handleMouseEnterDesktop}
-                  onMouseLeave={handleMouseLeaveDesktop}
-                  className="border border-black rounded-full py-2 md:py-3 px-4 md:px-6 text-base md:text-lg font-normal hover:bg-gray-100 transition-colors duration-200 cursor-pointer"
-                >
-                  {career}
-                </button>
-              ) : (
-                <button
-                  key={index + 3}
-                  className="border border-black rounded-full py-2 md:py-3 px-4 md:px-6 text-base md:text-lg font-normal hover:bg-gray-100 transition-colors duration-200"
-                >
-                  {career}
-                </button>
-              )
-            )}
-          </div>
         </div>
       </div>
     </div>
-  );
+  </div>
+);
 }
 
 export default Stage1;
