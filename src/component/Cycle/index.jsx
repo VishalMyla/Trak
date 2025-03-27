@@ -24,7 +24,7 @@ const Cycle = () => {
 <g filter="url(#filter2_d_1445_916)">
 <rect x="793.078" y="33.2852" width="291.22" height="100" className='text-center p-2' rx="37.9321" fill="white" shape-rendering="crispEdges"/>
 <foreignObject x="793.078" y="33.2852" width="291.22" height="100" rx="45.5359">
-<p xmlns="http://www.w3.org/1999/xhtml" className='text-6xl py-4 text-center  fontClass'>{t('CycleTxt2')}</p>
+<p xmlns="http://www.w3.org/1999/xhtml" className='text-6xl py-4 w-max text-center  fontClass'>{t('CycleTxt2')}</p>
 </foreignObject>
 </g>
 <g filter="url(#filter3_d_1445_916)">
