@@ -12,7 +12,7 @@ function Pathway() {
   const [targetStage, setTargetStage] = useState(null);
   
   const navigateToInstagram = () => {
-    window.location.href = 'https://www.instagram.com/trak.pe/?igsh=dzhtMWpkZDVuZmx5';
+    window.location.href = ' https://www.instagram.com/trak.pe/ ';
   };
   const stageRefs = {
     1: useRef(null),

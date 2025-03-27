@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 function Footer() {
   const { t } = useTranslation()
   const navigateToInstagram = () => {
-    window.location.href = 'https://www.instagram.com/trak.pe/?igsh=dzhtMWpkZDVuZmx5';
+    window.location.href = 'https://www.instagram.com/trak.pe/ ';
   };
   return (
     <div className = 'bg-black py-16 px-14 w-full max-md:px-5 max-md:py-5'>
@@ -19,8 +19,9 @@ function Footer() {
         <div className='flex justify-between mt-28 max-md:flex-col'>
             <p className='text-sm text-white max-md:hidden'> {t('Footer.Ftxt6')}</p>
              <div className='flex justify-between text-white'>
-                <button onClick={navigateToInstagram} className=' cursor-pointer text-white py-2 px-4 rounded-md text-sm font-semibold max-md:mt-5'>
-                © 2025 Trakpe. Follow us on Instagram</button>
+                <button onClick={navigateToInstagram} className=' cursor-pointer text-white py-2 px-4 rounded-md text-sm  max-md:mt-5'>
+                © 2025 Trakpe. Follow us on
+                <b className='font-bold'> Instagram</b> </button>
              </div>
         </div>
      

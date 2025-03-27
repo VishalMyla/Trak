@@ -7,7 +7,7 @@ function ErrorPage() {
  const { t} = useTranslation()
   const [loader, setLoader] = useState(true)
   const navigateToInstagram = () => {
-    window.location.href = 'https://www.instagram.com/trak.pe/?igsh=dzhtMWpkZDVuZmx5';
+    window.location.href =  'https://www.instagram.com/trak.pe/ ';
   };
   useEffect(() => {
     setTimeout(() => {
