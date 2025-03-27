@@ -11,6 +11,9 @@ function Pathway() {
   const [loading, setLoading] = useState(false);
   const [targetStage, setTargetStage] = useState(null);
   
+  const navigateToInstagram = () => {
+    window.location.href = 'https://www.instagram.com/trak.pe/?igsh=dzhtMWpkZDVuZmx5';
+  };
   const stageRefs = {
     1: useRef(null),
     2: useRef(null),
@@ -185,10 +188,8 @@ function Pathway() {
               </div>
               
               <div className='flex justify-center md:justify-end text-white space-x-3.5'>
-                <p className='cursor-pointer hover:text-green-600'>FI</p>
-                <p className='cursor-pointer hover:text-green-600'>HI</p>
-                <p className='cursor-pointer hover:text-green-600'>SWE</p>
-                <p className='cursor-pointer hover:text-green-600'>EN</p>
+              <button onClick={navigateToInstagram} className=' cursor-pointer text-white py-2 px-4 rounded-md text-sm font-semibold max-md:mt-5'>
+              © 2025 Trakpe. Follow us on Instagram</button>
               </div>
             </div>
             

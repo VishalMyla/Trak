@@ -6,7 +6,9 @@ import { useTranslation } from 'react-i18next'
 function ErrorPage() {
  const { t} = useTranslation()
   const [loader, setLoader] = useState(true)
-
+  const navigateToInstagram = () => {
+    window.location.href = 'https://www.instagram.com/trak.pe/?igsh=dzhtMWpkZDVuZmx5';
+  };
   useEffect(() => {
     setTimeout(() => {
       setLoader(false)
@@ -45,10 +47,8 @@ function ErrorPage() {
                   >{t('Footer.Ftxt2')}</span>
                 </span>
                 <div className='flex justify-between text-white'>
-                  <p className='mr-3.5 cursor-pointer hover:text-green-600'>FI</p>
-                  <p className='mr-3.5 cursor-pointer hover:text-green-600 '>HI</p>
-                  <p className='mr-3.5 cursor-pointer hover:text-green-600'>SWE</p>
-                  <p className='mr-3.5 cursor-pointer hover:text-green-600'>EN</p>
+                <button onClick={navigateToInstagram} className=' cursor-pointer text-white py-2 px-4 rounded-md text-sm font-semibold max-md:mt-5'>
+                © 2025 Trakpe. Follow us on Instagram</button>
                 </div>
               </div>
               <hr className=' border-8 border-white rounded-sm mt-6' />

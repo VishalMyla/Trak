@@ -7,7 +7,7 @@ function LangDetector({setIsclicked}) {
     const languges = [
         { code: "en", Lang: "English" },
         { code: "fi", Lang: "Finnish" },
-        { code: "swe", Lang: "Sweden" },
+        { code: "swe", Lang: "Swedish" },
         { code: "hi", Lang: "Hindi" },
   
 
